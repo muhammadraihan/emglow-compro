@@ -46,4 +46,13 @@ Route::group(['prefix' => 'backoffice', 'middleware' => ['auth']], function () {
     Route::resource('about', 'AboutController');
     Route::resource('cabang', 'CabangController');
     Route::resource('dokter', 'DokterController');
+    Route::resource('produk_kategori', 'ProdukKategoriController');
+    Route::resource('produk', 'ProdukController');
+    Route::resource('treatment_kategori', 'TreatmentKategoriController');
+    Route::resource('treatment', 'TreatmentController');
+    Route::resource('reseller', 'ResellerController');
+    Route::resource('karir', 'KarirController');
+    Route::resource('edukasi', 'EdukasiController');
+    Route::resource('penghargaan', 'PenghargaanController');
+    Route::resource('socialMedia', 'SocialMediaController');
 });
