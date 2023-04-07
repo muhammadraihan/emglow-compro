@@ -15,11 +15,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    // check if user is auth then redirect to dashboard page
-    if (Auth::check()) {
-        return redirect()->route('backoffice.dashboard');
-    }
-    return view('welcome');
+    return view('pages.landing');
 });
 
 Auth::routes(['register' => false]);
