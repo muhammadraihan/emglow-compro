@@ -28,13 +28,35 @@
     </section>
     <!-- End Hero -->
 
+    <section class="promos">
+        <div class="container">
+            <div class="title" data-aos="fade-left" data-aos-dekay="100">
+                <h2>Promo dari<br/>eMGlow Aesthetic Centre</h2>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="banner-thumbnail">
+                            <div class="banner-img" style="background-image: url('/img/banner-1.jpeg')"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="banner-thumbnail">
+                            <div class="banner-img" style="background-image: url('/img/banner-2.jpeg')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     {{-- Awards --}}
     <section class="awards-emglow">
         <div class="container">
-            <div class="title-section">
+            <div class="title-section" data-aos="fade-up" data-aos-duration="200">
                 <h4>Penghargaan eMGlow<br />Aesthetic Centre</h4>
             </div>
-            <div class="owl-carousel awards-carousel owl-theme px-5">
+            <div class="owl-carousel awards-carousel owl-theme px-5" data-aos="fade-up" data-aos-duration="300">
                 <div class="item">
                     <div class="card">
                         <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
@@ -109,14 +131,14 @@
     <section class="youtube-emglow">
         <div class="container">
             <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" data-aos="fade-right" data-aos-duration="1000">
                     <div class="h4">
                         Dengar Dokter
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatibus, blanditiis enim cum
                         nostrum eius laboriosam neque architecto consequatur, iste cupiditate aliquid ipsa id.</p>
                 </div>
-                <div class="col-12 col-md-8">
+                <div class="col-12 col-md-8" data-aos="fade-left" data-aos-duration="1200">
                     <iframe width="699" height="393" src="https://www.youtube.com/embed/rVAzWASpbA4"
                         title="Dengar Kata Dokter - Episode 1 | eMGlow Aesthetic Centre by dr. Marlina" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -132,19 +154,21 @@
     {{-- Education --}}
     <!-- Book -->
     <section class="booking" data-aos="fade-up">
-        <div class="content">
-            <div class="row d-flex justify-content-center">
-                <div class="col-12 col-md-6 mt-3">
-                    <div class="d-flex align-items-center">
-                        <div class="copy-customer">Kami tunggu kamu di eMGlow</div>
-                        <div class="divider mx-4">
-                        </div>
-                        <div class="cta">Jadwalkan Konsultasi</div>
+        <div class="container">
+            <div class="content">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-md-6 mt-3" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="cta mt-4 mb-3">Tahukah Kamu?</div>
+                        <p class="education mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut debitis magnam
+                            provident ullam porro. Sit molestiae facilis voluptatum quam doloribus culpa alias! Illum
+                            laudantium iste eius error quis quae.
+                        </p>
+                        <button class="btn btn-accent-emglow">Lihat selengkapnya</button>
                     </div>
-                    <button class="btn btn-accent-emglow w-100">Booking Jadwal Konsultasi</button>
-                </div>
-                <div class="col-12 col-md-4">
-                    <img src="assets/dokmar-book 1.png" alt="Dokmar" class="w-100">
+                    <div class="col-12 col-md-4" data-aos="fade-up-left" data-aos-duration="1200">
+                        <img src="assets/dokmar-book 1.png" alt="Dokmar" class="w-100">
+                    </div>
                 </div>
             </div>
         </div>

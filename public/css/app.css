@@ -17,12 +17,12 @@ body {
 
 .navbar-emglow .nav-item .nav-link {
     color: #313131 !important;
-    font-family: var(--inter) !important;
-    font-size: 15px;
+    font-family: var(--poppins) !important;
+    font-size: 16px;
 }
 
 .navbar-emglow .nav-item {
-    margin-right: 48px;
+    margin-right: 24px;
 }
 
 .navbar-emglow .navbar-toggler .menu-hamburger {
@@ -31,8 +31,8 @@ body {
 
 .navbar-emglow .nav-item .nav-link.active {
     color: var(--emglow-primary) !important;
-    font-weight: 700;
-    font-family: var(--inter) !important;
+    font-weight: 600;
+    font-family: var(--poppins) !important;
 }
 
 .navbar-emglow .navbar {
@@ -846,8 +846,16 @@ footer {
     }
 
     .booking .content .cta {
-        font-size: 36px;
+        font-size: 32px;
         line-height: 48px;
+        color: #252525;
+    }
+
+    .booking .education {
+        font-size: 16px;
+        font-weight: 400;
+        color: #414449;
+        line-height: 30px;
     }
 
     .booking .btn-accent-emglow {
@@ -869,43 +877,40 @@ footer {
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
     margin-top: 20px;
     margin-bottom: 0px;
-    position: relative;
-    height: 130px;
-    top: 190px
 }
 
 .home-testimonial h3 {
     color: var(--orange);
     font-size: 14px;
     font-weight: 500;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .home-testimonial h2 {
     color: white;
     font-size: 28px;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .testimonial-inner {
     position: relative;
-    top: -174px
+    top: -174px;
 }
 
 .testimonial-pos {
     position: relative;
-    top: 24px
+    top: 24px;
 }
 
 .testimonial-inner .tour-desc {
     border-radius: 5px;
-    padding: 40px
+    padding: 40px;
 }
 
 .color-grey-3 {
     font-family: var(--inter);
     font-size: 16px;
-    color: #6c83a2
+    color: #6c83a2;
 }
 
 .testimonial-inner img.tm-people {
@@ -915,17 +920,60 @@ footer {
     border-radius: 50%;
     -o-object-fit: cover;
     object-fit: cover;
-    max-width: none
+    max-width: none;
 }
 
 .link-name {
     font-family: var(--poppins);
     font-size: 16px;
-    color: #6c83a2
+    color: #6c83a2;
 }
 
 .link-position {
     font-family: var(--poppins);
     font-size: 14px;
-    color: #6c83a2
+    color: #6c83a2;
+}
+
+/* 
+---------------------------------------------
+Promos Style
+--------------------------------------------- 
+*/
+
+.promos {
+    margin: 120px 0;
+    background-color: #f2d8ff;
+    background-image: linear-gradient(0deg, #f2d8ff 0%, #ffffff 100%);
+}
+
+.promos .container {
+    padding: 2.75rem 2rem;
+}
+
+.promos .title h2 {
+    font-size: 48px;
+    color: var(--emglow-primary);
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.promos .content {
+    margin-top: 36px;
+}
+
+.promos .banner-thumbnail {
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    background-color: #444444;
+    border-radius: 24px;
+}
+
+.promos .banner-thumbnail .banner-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
