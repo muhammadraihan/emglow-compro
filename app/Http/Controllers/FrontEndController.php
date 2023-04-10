@@ -37,15 +37,16 @@ class FrontEndController extends Controller
         $logo = Logo::all();
         $award = Penghargaan::all();
         $produk = Produk::all();
-        $treatment = Treatment::all();
+        $treatment = Treatment::where('label', '=', '2')->get();
         $reseller = Reseller::all();
         $promo = Promo::all();
         $sosmed = SocialMedia::all();
         $youtube = Youtube::all();
+        $newtreatment = Treatment::where('label', '=', '1')->get();
 
         return view('pages.landing',
         compact('about', 'cabang', 'dokter', 'edukasi', 'karir', 'logo', 'award', 'produk',
-        'treatment', 'reseller', 'promo', 'sosmed', 'youtube'));
+        'treatment', 'reseller', 'promo', 'sosmed', 'youtube', 'newtreatment'));
     }
 
     public function about()

@@ -148,7 +148,6 @@ class PenghargaanController extends Controller
         $penghargaan = Penghargaan::uuid($id);
         $penghargaan->name = $request->name;
         $penghargaan->deskripsi = $request->deskripsi;
-        $penghargaan->link = $request->link;
 
         if($request->hasFile('photo')){
 

@@ -6,22 +6,63 @@
         </a>
     </li>
     <li>
+        <a href="{{route('cabang.index')}}" title="Cabang" data-filter-tags="Cabang">
+            <i class="fal fa-warehouse"></i>
+            <span class="nav-link-text">Cabang</span>
+        </a>
+    </li>
+    <li>
+        <a href="{{route('dokter.index')}}" title="dokter" data-filter-tags="dokter">
+            <i class="fal fa-user"></i>
+            <span class="nav-link-text">Dokter</span>
+        </a>
+    </li>
+    <li>
+    <li>
         <a href="{{route('promo.index')}}" title="Promo" data-filter-tags="Promo">
             <i class="fal fa-bullhorn"></i>
             <span class="nav-link-text">Promo</span>
         </a>
     </li>
     <li>
-        <a href="{{route('produk.index')}}" title="Produk" data-filter-tags="Produk">
+        <a href="#" title="Media" data-filter-tags="Media">
             <i class="fal fa-box"></i>
             <span class="nav-link-text">Produk</span>
         </a>
+        <ul>
+            <li>
+                <a href="{{route('produk_kategori.index')}}" title="Product Categories" data-filter-tags="Product Categories">
+                    <i class="fal fa-cubes"></i>
+                    <span class="nav-link-text">Product Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{route('produk.index')}}" title="Produk" data-filter-tags="Produk">
+                    <i class="fal fa-box"></i>
+                    <span class="nav-link-text">Produk</span>
+                </a>
+            </li>
+        </ul>
     </li>
     <li>
-        <a href="{{route('treatment.index')}}" title="Treatment" data-filter-tags="Treatment">
+        <a href="#" title="Media" data-filter-tags="Media">
             <i class="fal fa-user-md"></i>
             <span class="nav-link-text">Treatment</span>
         </a>
+        <ul>
+            <li>
+                <a href="{{route('treatment_kategori.index')}}" title="Treatment Categories" data-filter-tags="Treatment Categories">
+                    <i class="fal fa-users"></i>
+                    <span class="nav-link-text">Treatment Categories</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{route('treatment.index')}}" title="Treatment" data-filter-tags="Treatment">
+                    <i class="fal fa-user-md"></i>
+                    <span class="nav-link-text">Treatment</span>
+                </a>
+            </li>
+        </ul>
     </li>
     <li>
         <a href="{{route('reseller.index')}}" title="Reseller" data-filter-tags="Reseller">
@@ -42,45 +83,15 @@
         </a>
     </li>
     <li>
-        <a href="{{route('penghargaan.index')}}" title="Penghargaan" data-filter-tags="Penghargaan">
-            <i class="fal fa-trophy-alt"></i>
-            <span class="nav-link-text">Penghargaan</span>
-        </a>
-    </li>
-    <li>
-        <a href="{{route('socialMedia.index')}}" title="Social Media" data-filter-tags="Social Media">
-            <i class="fal fa-tablet-alt"></i>
-            <span class="nav-link-text">Social Media</span>
-        </a>
-    </li>
-    <li>
-        <a href="{{route('about.index')}}" title="About" data-filter-tags="About">
-            <i class="fal fa-exclamation-circle"></i>
-            <span class="nav-link-text">About</span>
-        </a>
-    </li>
-    <li>
-        <a href="{{route('cabang.index')}}" title="Cabang" data-filter-tags="Cabang">
-            <i class="fal fa-warehouse"></i>
-            <span class="nav-link-text">Cabang</span>
-        </a>
-    </li>
-    <li>
-        <a href="{{route('dokter.index')}}" title="dokter" data-filter-tags="dokter">
-            <i class="fal fa-user"></i>
-            <span class="nav-link-text">Dokter</span>
-        </a>
-    </li>
-    <li>
         <a href="#" title="Media" data-filter-tags="Media">
             <i class="fal fa-home"></i>
             <span class="nav-link-text">Master Data</span>
         </a>
         <ul>
             <li>
-                <a href="{{route('logo.index')}}" title="Logo" data-filter-tags="logo">
-                    <i class="fal fa-home"></i>
-                    <span class="nav-link-text">Logo</span>
+                <a href="{{route('about.index')}}" title="About" data-filter-tags="About">
+                    <i class="fal fa-exclamation-circle"></i>
+                    <span class="nav-link-text">About</span>
                 </a>
             </li>
             <li>
@@ -96,15 +107,21 @@
                 </a>
             </li>
             <li>
-                <a href="{{route('produk_kategori.index')}}" title="Product Categories" data-filter-tags="Product Categories">
-                    <i class="fal fa-cubes"></i>
-                    <span class="nav-link-text">Product Categories</span>
+                <a href="{{route('logo.index')}}" title="Logo" data-filter-tags="logo">
+                    <i class="fal fa-home"></i>
+                    <span class="nav-link-text">Logo</span>
                 </a>
             </li>
             <li>
-                <a href="{{route('treatment_kategori.index')}}" title="Treatment Categories" data-filter-tags="Treatment Categories">
-                    <i class="fal fa-users"></i>
-                    <span class="nav-link-text">Treatment Categories</span>
+                <a href="{{route('penghargaan.index')}}" title="Penghargaan" data-filter-tags="Penghargaan">
+                    <i class="fal fa-trophy-alt"></i>
+                    <span class="nav-link-text">Penghargaan</span>
+                </a>
+            </li>
+            <li>
+                <a href="{{route('socialMedia.index')}}" title="Social Media" data-filter-tags="Social Media">
+                    <i class="fal fa-tablet-alt"></i>
+                    <span class="nav-link-text">Social Media</span>
                 </a>
             </li>
         </ul>

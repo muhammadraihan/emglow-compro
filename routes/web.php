@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/about', 'FrontEndController@about')->name('about');
+Route::get('/', 'FrontEndController@index')->name('index');
 
 Auth::routes(['register' => false]);
 

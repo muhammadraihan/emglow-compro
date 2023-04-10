@@ -53,14 +53,23 @@
                         <div class="invalid-feedback">{{ $errors->first('deskripsi') }}</div>
                         @endif
                     </div>
-
-                    <div class="form-group col-md-4 mb-3">
-                        {{ Form::label('link','link Edukasi (Youtube)',['class' => 'form-label'])}}
-                        {{ Form::textarea('link','https://www.youtube.com/watch?v=' .$edukasi->link,['placeholder' => 'link Edukasi','class' => 'form-control '.($errors->has('link') ? 'is-invalid':''),'required', 'autocomplete' => 'off'])}}
-                        @if ($errors->has('link'))
-                        <div class="invalid-feedback">{{ $errors->first('link') }}</div>
-                        @endif
-                    </div>
+                    @if ($edukasi->link == '')
+                        <div class="form-group col-md-4 mb-3">
+                            {{ Form::label('link','link Edukasi (Youtube)',['class' => 'form-label'])}}
+                            {{ Form::textarea('link', '',['placeholder' => 'link Edukasi','class' => 'form-control '.($errors->has('link') ? 'is-invalid':''),'required', 'autocomplete' => 'off'])}}
+                            @if ($errors->has('link'))
+                            <div class="invalid-feedback">{{ $errors->first('link') }}</div>
+                            @endif
+                        </div>
+                    @else
+                        <div class="form-group col-md-4 mb-3">
+                            {{ Form::label('link','link Edukasi (Youtube)',['class' => 'form-label'])}}
+                            {{ Form::textarea('link','https://www.youtube.com/watch?v=' .$edukasi->link,['placeholder' => 'link Edukasi','class' => 'form-control '.($errors->has('link') ? 'is-invalid':''),'required', 'autocomplete' => 'off'])}}
+                            @if ($errors->has('link'))
+                            <div class="invalid-feedback">{{ $errors->first('link') }}</div>
+                            @endif
+                        </div>
+                    @endif
                     <div class="form-group col-md-4 mb-3">
                         {{ Form::label('photo','Photo',['class' => 'required form-label'])}}
                         <input type="hidden" name="oldImage" value="{{ $edukasi->photo }}"> 

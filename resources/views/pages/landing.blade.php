@@ -43,17 +43,15 @@
                 </div>
                 <div class="content">
                     <div class="row">
-                        <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                            <div class="banner-thumbnail">
-                                <div class="banner-img" style="background-image: url('/img/banner-1.jpeg')"></div>
+                        @foreach ($promo as $item)
+                            <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="banner-thumbnail">
+                                    <div class="banner-img" style="background-image: url('{{ asset('photo/' . $item->photo) }}')"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-                            <div class="banner-thumbnail">
-                                <div class="banner-img" style="background-image: url('/img/banner-2.jpeg')"></div>
-                            </div>
-                        </div>
                     </div>
+                    {{ $item->name }}
+                @endforeach
                 </div>
             </div>
         </div>
@@ -86,70 +84,35 @@
                             <div class="col-md-10 treatment-card rounded-3 mb-4" data-aos="fade-up-right"
                                 data-aos-delay="100">
                                 <div class="row bg-white justify-content-center align-items-center py-3 px-1">
+
+                                    @foreach ($treatment as $item)
                                     <div class="col-md-3 rounded-2">
                                         <img class="img-fluid img-responsive rounded product-image"
-                                            src="assets/Complete Pico Biaxis_Laser Full Face.png" alt="Treatment">
+                                            src="{{ asset('photo/' . $item->photo) }}" alt="Treatment">
                                     </div>
                                     <div class="col-md-6 mt-2">
-                                        <h5>Complete Pico Biaxis Laser</h5>
-                                        <p class="text-justify para mb-0">Lorem ipsum, dolor sit amet consectetur
-                                            adipisicing elit. Beatae nobis tempore distinctio?</p>
+                                        <h5>{{ $item->name }}</h5>
+                                        <p class="text-justify para mb-0">
+                                            {{ $item->deskripsi }}
+                                        </p>
                                     </div>
                                     <div class="align-items-center align-content-center col-md-3 border-left mt-1">
                                         <div class="d-flex flex-row align-items-center">
-                                            <h4 class="animate-charcter">Best Seller</h4>
+                                            <h4 class="animate-charcter">
+                                                @if ($item->label == 2)
+                                                    Best Treatment
+                                                @else
+                                                    New Treatment
+                                                @endif
+                                            </h4>
                                         </div>
-                                        <h6 class="text-success">Free consultation</h6>
+                                        <h6 class="text-success">#Guarantee</h6>
                                         <div class="d-flex flex-column mt-4"><button class="btn btn-primary-emglow btn-sm"
                                                 type="button">Book
                                                 Now</button></div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-10 treatment-card rounded-3 mb-4" data-aos="fade-up-left"
-                                data-aos-delay="200">
-                                <div class="row bg-white justify-items-center align-items-center py-3 px-1">
-                                    <div class="col-md-3 rounded-2">
-                                        <img class="img-fluid img-responsive rounded product-image"
-                                            src="assets/Crystal Cryopolisis_Shape and Slim Body.png" alt="Treatment">
-                                    </div>
-                                    <div class="col-md-6 mt-2">
-                                        <h5>Crystal Cryopolisis</h5>
-                                        <p class="text-justify para mb-0">Lorem ipsum dolor sit amet, consectetur
-                                            adipisicing elit. Natus minus repudiandae est id ea?</p>
-                                    </div>
-                                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <h4 class="animate-charcter">Recommended</h4>
-                                        </div>
-                                        <h6 class="text-success">Free consultation</h6>
-                                        <div class="d-flex flex-column mt-4"><button class="btn btn-primary-emglow btn-sm"
-                                                type="button">Book
-                                                Now</button></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-10 treatment-card rounded-3 mb-4" data-aos="fade-up-right"
-                                data-aos-delay="300">
-                                <div class="row bg-white justify-items-center align-items-center py-3 px-1">
-                                    <div class="col-md-3">
-                                        <img class="img-fluid img-responsive rounded product-image"
-                                            src="assets/Crystal Skin IPL Infusion.png" alt="Treatment">
-                                    </div>
-                                    <div class="col-md-6 mt-2">
-                                        <h5>Crystal Skin IPL</h5>
-                                        <p class="text-justify para mb-0">Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Accusamus quidem omnis nobis sunt rerum maiores optio.</p>
-                                    </div>
-                                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <h4 class="animate-charcter">Recommended</h4>
-                                        </div>
-                                        <h6 class="text-success">Free consultation</h6>
-                                        <div class="d-flex flex-column mt-4"><button class="btn btn-primary-emglow btn-sm"
-                                                type="button">Book
-                                                Now</button></div>
-                                    </div>
+                                        
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
@@ -182,55 +145,20 @@
                     </div>
                     <div class="row">
                         <!-- Single Product -->
-                        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in-up" data-aos-delay="100">
-                            <div id="product-1" class="single-product">
-                                <div class="part-1">
+                        @foreach ($produk as $item)
+                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in-up" data-aos-delay="100">
+                                <div id="product-1" class="single-product">
+                                    <div class="part-1">
+                                        <span class="discount">{{ $item->Categories->name }}</span>
+                                    </div>
+                                    <div class="part-2 mb-4">
+                                        <h3 class="product-title text-truncate">{{ $item->name }}</h3>
+                                        <h4 class="product-price">{{ $item->deskripsi }}</h4>
+                                    </div>
+                                    <button class="btn btn-outline-primary w-100 btn-sm rounded-pill">Lihat Detail</button>
                                 </div>
-                                <div class="part-2 mb-4">
-                                    <h3 class="product-title text-truncate">eMGlow Sunscreen Smooth Glow</h3>
-                                    <h4 class="product-price">Rp125.000</h4>
-                                </div>
-                                <button class="btn btn-outline-primary w-100 btn-sm rounded-pill">Lihat Detail</button>
                             </div>
-                        </div>
-                        <!-- Single Product -->
-                        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in-up" data-aos-delay="200">
-                            <div id="product-2" class="single-product">
-                                <div class="part-1">
-                                    <span class="discount">Recommended</span>
-                                </div>
-                                <div class="part-2 mb-4">
-                                    <h3 class="product-title text-truncate">eMBeaute Blush On</h3>
-                                    <h4 class="product-price">Rp220.000</h4>
-                                </div>
-                                <button class="btn btn-outline-primary w-100 btn-sm rounded-pill">Lihat Detail</button>
-                            </div>
-                        </div>
-                        <!-- Single Product -->
-                        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in-up" data-aos-delay="300">
-                            <div id="product-3" class="single-product">
-                                <div class="part-1">
-                                </div>
-                                <div class="part-2 mb-4">
-                                    <h3 class="product-title text-truncate">eMGlow Night Cream Diamond Luxury</h3>
-                                    <h4 class="product-price">Rp180.000</h4>
-                                </div>
-                                <button class="btn btn-outline-primary w-100 btn-sm rounded-pill">Lihat Detail</button>
-                            </div>
-                        </div>
-                        <!-- Single Product -->
-                        <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in-up" data-aos-delay="400">
-                            <div id="product-4" class="single-product">
-                                <div class="part-1">
-                                    <span class="discount">best seller</span>
-                                </div>
-                                <div class="part-2 mb-4">
-                                    <h3 class="product-title text-truncate">eMGlow Hydrating Waterbank Essence</h3>
-                                    <h4 class="product-price">Rp320.000</h4>
-                                </div>
-                                <button class="btn btn-outline-primary w-100 btn-sm rounded-pill">Lihat Detail</button>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
 
                     <div class="d-flex justify-content-center row mt-2">
@@ -294,19 +222,23 @@
     <!-- Featured Treatment -->
     <section class="featured-treatment">
         <div class="container">
-            <div class="row py-5 align-items-center">
-                <div class="col-12 col-md-6" data-aos="fade-up-right">
-                    <img src="assets/card-bio-axis.png" class="w-100" alt="Card">
+            @foreach ($newtreatment as $item)
+                <div class="row py-5 align-items-center">
+                    <div class="col-12 col-md-6" data-aos="fade-up-right">
+                        <img src="{{ asset('photo/' . $item->photo) }}" class="w-100" alt="Card">
+                    </div>
+                    <div class="col-12 col-md-6" data-aos="fade-up-left">
+                        <h4>
+                                New Treatment !!
+                        </h4>
+                        <h1 class="title">{{ $item->name }}</h1>
+                        <p class="desc">
+                            {{ $item->deskripsi }}
+                        </p>
+                        <a href="http://" target="_blank" class="btn btn-primary-emglow">Booking Sekarang</a>
+                    </div>
                 </div>
-                <div class="col-12 col-md-6" data-aos="fade-up-left">
-                    <h4>New Treatment</h4>
-                    <h1 class="title">Pico Biaxis Laser</h1>
-                    <p class="desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, repellat,
-                        aliquam earum ut reprehenderit suscipit fugiat sit provident cum molestias architecto iure.
-                        Reiciendis, ipsa?</p>
-                    <a href="http://" target="_blank" class="btn btn-primary-emglow">Booking Sekarang</a>
-                </div>
-            </div>
+            @endforeach
         </div>
     </section>
     <!-- End -->
@@ -325,73 +257,19 @@
                     </div>
                 </div>
             </div>
-            <div class="owl-carousel awards-carousel owl-theme px-5" data-aos="fade-up" data-aos-duration="300">
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Oktober 2022</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
+            @foreach ($award as $item)
+                <div class="owl-carousel awards-carousel owl-theme px-5" data-aos="fade-up" data-aos-duration="300">
+                    <div class="item">
+                        <div class="card">
+                            <img src="{{ asset('photo/' . $item->photo) }}" class="card-img-top rounded-top" alt="profile-image">
+                            <div class="card-body">
+                                <h5 class="card-title mb-2">{{ $item->name }}</h5>
+                                {{-- <span class="card-subtitle text-gray font-weight-normal">Oktober 2022</span> --}}
+                                <p class="card-text my-3">{!! $item->deskripsi !!}</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Juni 2022</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Mei 2021</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Februari 2021</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Mei 2021</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Januari 2021</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
+            @endforeach
             </div>
     </section>
     {{-- End Awards --}}
@@ -401,18 +279,21 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-md-4" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="h4">
-                        Dengar Dokter
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatibus, blanditiis enim cum
-                        nostrum eius laboriosam neque architecto consequatur, iste cupiditate aliquid ipsa id.</p>
-                </div>
-                <div class="col-12 col-md-8" data-aos="fade-left" data-aos-duration="1200">
-                    <iframe width="699" height="393" src="https://www.youtube.com/embed/rVAzWASpbA4"
-                        title="Dengar Kata Dokter - Episode 1 | eMGlow Aesthetic Centre by dr. Marlina" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
+                    @foreach ($youtube as $item)
+                            <div class="h4">
+                                {{ $item->name }}
+                            </div>
+                            <p>
+                                {{ $item->detail }}
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-8" data-aos="fade-left" data-aos-duration="1200">
+                            <iframe width="699" height="393" src="https://www.youtube.com/embed/{{ $item->link }}"
+                                title="Dengar Kata Dokter - Episode 1 | eMGlow Aesthetic Centre by dr. Marlina" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    @endforeach
             </div>
         </div>
         <!--jumbo-->
@@ -426,18 +307,18 @@
         <div class="container">
             <div class="content">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-12 col-md-6 mt-3" data-aos="fade-up-right" data-aos-duration="1000">
-                        <div class="cta mt-4 mb-3">Tahukah Kamu?</div>
-                        <p class="education mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut debitis magnam
-                            provident ullam porro. Sit molestiae facilis voluptatum quam doloribus culpa alias! Illum
-                            laudantium iste eius error quis quae.
-                        </p>
-                        <button class="btn btn-accent-emglow">Lihat selengkapnya</button>
-                    </div>
-                    <div class="col-12 col-md-4" data-aos="fade-up-left" data-aos-duration="1200">
-                        <img src="assets/dokmar-book 1.png" alt="Dokmar" class="w-100">
-                    </div>
+                    @foreach ($edukasi as $item)
+                        <div class="col-12 col-md-6 mt-3" data-aos="fade-up-right" data-aos-duration="1000">
+                            <div class="cta mt-4 mb-3">Tahukah Kamu?</div>
+                            <p class="education mb-4">
+                                {{ $item->deskripsi }}
+                            </p>
+                            <button class="btn btn-accent-emglow">Lihat selengkapnya</button>
+                        </div>
+                        <div class="col-12 col-md-4" data-aos="fade-up-left" data-aos-duration="1200">
+                            <img src="{{ asset('photo/' . $item->photo) }}" alt="Dokmar" class="w-100">
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
