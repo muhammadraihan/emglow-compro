@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('pages.landing');
 });
 
+Route::get('/about', 'FrontEndController@about')->name('about');
+
 Auth::routes(['register' => false]);
 
 Route::group(['prefix' => 'backoffice', 'middleware' => ['auth']], function () {

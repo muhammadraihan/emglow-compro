@@ -30,190 +30,27 @@
 
     <section class="promos">
         <div class="container">
-            <div class="title" data-aos="fade-left" data-aos-dekay="100">
-                <h2>Promo dari<br/>eMGlow Aesthetic Centre</h2>
-            </div>
-            <div class="content">
+            <div class="content-container">
                 <div class="row">
-                    <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="banner-thumbnail">
-                            <div class="banner-img" style="background-image: url('/img/banner-1.jpeg')"></div>
+                    <div class="col-12 col-md-5" data-aos="fade-left" data-aos-delay="100">
+                        <div class="title-promos">
+                            Hot Offer <img src="/img/fire-2.png" alt="Hot">
                         </div>
-                    </div>
-                    <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-                        <div class="banner-thumbnail">
-                            <div class="banner-img" style="background-image: url('/img/banner-2.jpeg')"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {{-- Awards --}}
-    <section class="awards-emglow">
-        <div class="container">
-            <div class="title-section" data-aos="fade-up" data-aos-duration="200">
-                <h4>Penghargaan eMGlow<br />Aesthetic Centre</h4>
-            </div>
-            <div class="owl-carousel awards-carousel owl-theme px-5" data-aos="fade-up" data-aos-duration="300">
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Oktober 2022</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
+                        <div class="subtitle-promos">
+                            Jangan sampai ketinggal promo spesial dari eMGlow Aesthetic Centre!
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Juni 2022</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Mei 2021</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Februari 2021</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Mei 2021</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="card">
-                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
-                        <div class="card-body">
-                            <h5 class="card-title mb-2">Rewarded</h5>
-                            <span class="card-subtitle text-gray font-weight-normal">Januari 2021</span>
-                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
-                                bulk of the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </section>
-    {{-- End Awards --}}
-
-    {{-- Youtube --}}
-    <section class="youtube-emglow">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-4" data-aos="fade-right" data-aos-duration="1000">
-                    <div class="h4">
-                        Dengar Dokter
-                    </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatibus, blanditiis enim cum
-                        nostrum eius laboriosam neque architecto consequatur, iste cupiditate aliquid ipsa id.</p>
-                </div>
-                <div class="col-12 col-md-8" data-aos="fade-left" data-aos-duration="1200">
-                    <iframe width="699" height="393" src="https://www.youtube.com/embed/rVAzWASpbA4"
-                        title="Dengar Kata Dokter - Episode 1 | eMGlow Aesthetic Centre by dr. Marlina" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-        <!--jumbo-->
-        </div>
-    </section>
-    {{-- Youtube End --}}
-
-    {{-- Education --}}
-    <!-- Book -->
-    <section class="booking" data-aos="fade-up">
-        <div class="container">
-            <div class="content">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12 col-md-6 mt-3" data-aos="fade-up-right" data-aos-duration="1000">
-                        <div class="cta mt-4 mb-3">Tahukah Kamu?</div>
-                        <p class="education mb-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut debitis magnam
-                            provident ullam porro. Sit molestiae facilis voluptatum quam doloribus culpa alias! Illum
-                            laudantium iste eius error quis quae.
-                        </p>
-                        <button class="btn btn-accent-emglow">Lihat selengkapnya</button>
-                    </div>
-                    <div class="col-12 col-md-4" data-aos="fade-up-left" data-aos-duration="1200">
-                        <img src="assets/dokmar-book 1.png" alt="Dokmar" class="w-100">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End -->
-    {{-- Education End --}}
-
-    <!-- Features -->
-    <section class="features-emglow">
-        <div class="features-container">
-            <div class="container">
-                <div class="content-features text-center">
-                    <h1 data-aos="fade-up">Telah membantu banyak wanita di Indonesia memiliki wajah yang cantik dan
-                        sehat.</h1>
-                    <div class="row statistics">
-                        <div class="col-6 col-md-3 mb-4" data-aos="fade-up-right" data-aos-delay="100">
-                            <div class="numbers">
-                                2260++
-                            </div>
-                            <div class="type">
-                                Happy Customers
+                <div class="content">
+                    <div class="row">
+                        <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="banner-thumbnail">
+                                <div class="banner-img" style="background-image: url('/img/banner-1.jpeg')"></div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
-                            <div class="numbers">
-                                120+
-                            </div>
-                            <div class="type">
-                                Pilihan Treatment
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-                            <div class="numbers">
-                                50++
-                            </div>
-                            <div class="type">
-                                Produk Skincare
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 mb-4" data-aos="fade-up-left" data-aos-delay="400">
-                            <div class="numbers">
-                                99%
-                            </div>
-                            <div class="type">
-                                Hasil Efektif
+                        <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="banner-thumbnail">
+                                <div class="banner-img" style="background-image: url('/img/banner-2.jpeg')"></div>
                             </div>
                         </div>
                     </div>
@@ -221,7 +58,6 @@
             </div>
         </div>
     </section>
-    <!-- End Features -->
 
     <!-- Products -->
     <section class="products-emglow">
@@ -408,6 +244,53 @@
     </section>
     <!-- End Products -->
 
+    <!-- Features -->
+    <section class="features-emglow">
+        <div class="features-container">
+            <div class="container">
+                <div class="content-features text-center">
+                    <h1 data-aos="fade-up">Telah membantu banyak wanita di Indonesia memiliki wajah yang cantik dan
+                        sehat.</h1>
+                    <div class="row statistics">
+                        <div class="col-6 col-md-3 mb-4" data-aos="fade-up-right" data-aos-delay="100">
+                            <div class="numbers">
+                                2260++
+                            </div>
+                            <div class="type">
+                                Happy Customers
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="numbers">
+                                120+
+                            </div>
+                            <div class="type">
+                                Pilihan Treatment
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="numbers">
+                                50++
+                            </div>
+                            <div class="type">
+                                Produk Skincare
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4" data-aos="fade-up-left" data-aos-delay="400">
+                            <div class="numbers">
+                                99%
+                            </div>
+                            <div class="type">
+                                Hasil Efektif
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features -->
+
     <!-- Featured Treatment -->
     <section class="featured-treatment">
         <div class="container">
@@ -427,6 +310,140 @@
         </div>
     </section>
     <!-- End -->
+
+    {{-- Awards --}}
+    <section class="awards-emglow">
+        <div class="container">
+            <div class="title-section" data-aos="fade-up" data-aos-duration="200">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="h2 d-flex align-items-center">Penghargaan <img src="/img/award.png" alt="Trophy">
+                        </div>
+                        <div class="subtitle">
+                            Penghargaan yang diterima eMGlow Aesthetics Centre
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel awards-carousel owl-theme px-5" data-aos="fade-up" data-aos-duration="300">
+                <div class="item">
+                    <div class="card">
+                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Rewarded</h5>
+                            <span class="card-subtitle text-gray font-weight-normal">Oktober 2022</span>
+                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Rewarded</h5>
+                            <span class="card-subtitle text-gray font-weight-normal">Juni 2022</span>
+                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Rewarded</h5>
+                            <span class="card-subtitle text-gray font-weight-normal">Mei 2021</span>
+                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Rewarded</h5>
+                            <span class="card-subtitle text-gray font-weight-normal">Februari 2021</span>
+                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Rewarded</h5>
+                            <span class="card-subtitle text-gray font-weight-normal">Mei 2021</span>
+                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="http://placeimg.com/640/360/any" class="card-img-top rounded-top" alt="profile-image">
+                        <div class="card-body">
+                            <h5 class="card-title mb-2">Rewarded</h5>
+                            <span class="card-subtitle text-gray font-weight-normal">Januari 2021</span>
+                            <p class="card-text my-3">Some quick example text to build on the card title and make up the
+                                bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    {{-- End Awards --}}
+
+    {{-- Youtube --}}
+    <section class="youtube-emglow">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-md-4" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="h4">
+                        Dengar Dokter
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita voluptatibus, blanditiis enim cum
+                        nostrum eius laboriosam neque architecto consequatur, iste cupiditate aliquid ipsa id.</p>
+                </div>
+                <div class="col-12 col-md-8" data-aos="fade-left" data-aos-duration="1200">
+                    <iframe width="699" height="393" src="https://www.youtube.com/embed/rVAzWASpbA4"
+                        title="Dengar Kata Dokter - Episode 1 | eMGlow Aesthetic Centre by dr. Marlina" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!--jumbo-->
+        </div>
+    </section>
+    {{-- Youtube End --}}
+
+    {{-- Education --}}
+    <!-- Book -->
+    <section class="booking" data-aos="fade-up">
+        <div class="container">
+            <div class="content">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-md-6 mt-3" data-aos="fade-up-right" data-aos-duration="1000">
+                        <div class="cta mt-4 mb-3">Tahukah Kamu?</div>
+                        <p class="education mb-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aut debitis magnam
+                            provident ullam porro. Sit molestiae facilis voluptatum quam doloribus culpa alias! Illum
+                            laudantium iste eius error quis quae.
+                        </p>
+                        <button class="btn btn-accent-emglow">Lihat selengkapnya</button>
+                    </div>
+                    <div class="col-12 col-md-4" data-aos="fade-up-left" data-aos-duration="1200">
+                        <img src="assets/dokmar-book 1.png" alt="Dokmar" class="w-100">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End -->
+    {{-- Education End --}}
 
     <!-- Komitmen -->
     <section class="commitment">
@@ -462,63 +479,95 @@
     <!-- End -->
 
     {{-- Testimonial --}}
-    <section class="home-testimonial">
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
         <div class="container">
-            <div class="row d-flex justify-content-center testimonial-pos">
-                <div class="col-md-12 pt-4 d-flex justify-content-center">
-                    <h3>Testimonials</h3>
-                </div>
-                <div class="col-md-12 d-flex justify-content-center">
-                    <h2>Explore the students experience</h2>
+            <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-5">
+                    <div class="subtitle">TESTIMONIAL</div>
+                    <div class="title">What Our Customers Say</div>
                 </div>
             </div>
-            <section class="home-testimonial-bottom">
-                <div class="container testimonial-inner">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-4 style-3">
-                            <div class="tour-item ">
-                                <div class="tour-desc bg-white">
-                                    <div class="tour-text color-grey-3 text-center">&ldquo;At this School, our mission is
-                                        to balance a rigorous comprehensive college preparatory curriculum with healthy
-                                        social and emotional development.&rdquo;</div>
-                                    <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
-                                            src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg"
-                                            alt=""></div>
-                                    <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                    <div class="link-position d-flex justify-content-center">Student</div>
-                                </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="customers-testimonials" class="owl-carousel">
+
+                        <!--TESTIMONIAL 1 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="rounded" src="/assets/card-bio-axis.png" alt="">
+                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                    Completely synergize resource taxing relationships via premier niche markets.
+                                    Professionally cultivate.</p>
+                            </div>
+                            <div class="testimonial-name">
+                                EMILIANO AQUILANI
+                                <p>Mahasiswi, 28 tahun</p>
                             </div>
                         </div>
-                        <div class="col-md-4 style-3">
-                            <div class="tour-item ">
-                                <div class="tour-desc bg-white">
-                                    <div class="tour-text color-grey-3 text-center">&ldquo;At this School, our mission is
-                                        to balance a rigorous comprehensive college preparatory curriculum with healthy
-                                        social and emotional development.&rdquo;</div>
-                                    <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
-                                            src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                            alt=""></div>
-                                    <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                    <div class="link-position d-flex justify-content-center">Student</div>
-                                </div>
+                        <!--END OF TESTIMONIAL 1 -->
+                        <!--TESTIMONIAL 2 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="rounded"
+                                    src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                                    alt="">
+                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                    Completely synergize resource taxing relationships via premier niche markets.
+                                    Professionally cultivate.</p>
+                            </div>
+                            <div class="testimonial-name">ANNA ITURBE<p>Mahasiswi, 28 tahun</p>
                             </div>
                         </div>
-                        <div class="col-md-4 style-3">
-                            <div class="tour-item ">
-                                <div class="tour-desc bg-white">
-                                    <div class="tour-text color-grey-3 text-center">&ldquo;At this School, our mission is
-                                        to balance a rigorous comprehensive college preparatory curriculum with healthy
-                                        social and emotional development.&rdquo;</div>
-                                    <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
-                                            src="https://images.pexels.com/photos/4946604/pexels-photo-4946604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                            alt=""></div>
-                                    <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
-                                    <div class="link-position d-flex justify-content-center">Student</div>
-                                </div>
+                        <!--END OF TESTIMONIAL 2 -->
+                        <!--TESTIMONIAL 3 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="rounded"
+                                    src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                                    alt="">
+                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                    Completely synergize resource taxing relationships via premier niche markets.
+                                    Professionally cultivate.</p>
+                            </div>
+                            <div class="testimonial-name">LARA ATKINSON<p>Mahasiswi, 28 tahun</p>
                             </div>
                         </div>
+                        <!--END OF TESTIMONIAL 3 -->
+                        <!--TESTIMONIAL 4 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="rounded"
+                                    src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                                    alt="">
+                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                    Completely synergize resource taxing relationships via premier niche markets.
+                                    Professionally cultivate.</p>
+                            </div>
+                            <div class="testimonial-name">IAN OWEN<p>Mahasiswi, 28 tahun</p>
+                            </div>
+                        </div>
+                        <!--END OF TESTIMONIAL 4 -->
+                        <!--TESTIMONIAL 5 -->
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="rounded"
+                                    src="http://themes.audemedia.com/html/goodgrowth/images/testimonial3.jpg"
+                                    alt="">
+                                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions.
+                                    Completely synergize resource taxing relationships via premier niche markets.
+                                    Professionally cultivate.</p>
+                            </div>
+                            <div class="testimonial-name">MICHAEL TEDDY<p>Mahasiswi, 28 tahun</p>
+                            </div>
+                        </div>
+                        <!--END OF TESTIMONIAL 5 -->
                     </div>
-            </section>
+                </div>
+            </div>
+        </div>
     </section>
+    <!-- END OF TESTIMONIALS -->
     {{-- End Testimonial --}}
 @endsection

@@ -6,8 +6,15 @@
                 <p class="small text-muted text-capitalize">Cluster Festive Garden Grand Wisata Blok AG 1 No. 15
                     Lambangsari, Tambun
                     Selatan Kab. Bekasi. Jawa Barat. 17510.</p>
-                <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. 2023. <a
-                        class="text-primary" href="#">CV Tiga Cahaya</a></p>
+                <div class="small mb-3">Licensed by:</div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-3 col-md-3">
+                        <img src="/img/BPOM.png" alt="BPOM" class="w-75">
+                    </div>
+                    <div class="col-3 col-md-3">
+                        <img src="/img/label-halal.png" alt="HALAL" class="w-75">
+                    </div>
+                </div>
             </div>
             <div class="col-lg-2 col-md-6">
                 <h5 class="mb-3">Menu</h5>
@@ -24,8 +31,8 @@
                     berlangganan newsletter kami.</p>
                 <form action="#">
                     <div class="input-group mb-3">
-                        <input class="form-control" type="text" placeholder="Email kamu"
-                            aria-label="Email kamu" aria-describedby="button-addon2">
+                        <input class="form-control" type="text" placeholder="Email kamu" aria-label="Email kamu"
+                            aria-describedby="button-addon2">
                         <button class="btn btn-primary" id="button-addon2" type="button">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                 class="bi bi-send-fill" viewBox="0 0 16 16">
@@ -35,6 +42,29 @@
                         </button>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-md-4">
+                <div class="small">Ikuti Media Sosial eMGlow Aesthetic Centre:</div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 col-md-6">
+                <a href="/" class="sosmed-icon">Instagram</a>
+                <a href="/" class="sosmed-icon">Instagram</a>
+                <a href="/" class="sosmed-icon">Instagram</a>
+            </div>
+        </div>
+        <div class="divider">
+        </div>
+        <div class="d-flex justify-content-center text-center row">
+            <div class="col-12 col-md-6">
+                <div class="copyright">
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. 2023. <a
+                            class="text-primary" href="#">CV Tiga Cahaya</a></p>
+                    <p class="small text-muted">Developed and maintained by <a href="#" target="_blank">WBA Indonesia</a></p>
+                </div>
             </div>
         </div>
     </div>
