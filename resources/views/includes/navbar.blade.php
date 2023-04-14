@@ -15,13 +15,35 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link {{ request()->is('/') ? 'active' : '' }}"
-                            aria-current="page" href="#">Beranda</a></li>
-                    <li class="nav-item"><a class="nav-link {{ request()->is('/about') ? 'active' : '' }}"
+                            aria-current="page" href="{{ route('landing') }}">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link {{ request()->is('about') ? 'active' : '' }}"
                             href="{{ route('about') }}">Tentang Kami</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Treatment</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Store</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Dokter</a></li>
-                    <li class="nav-item"><a class="btn btn-primary-emglow" href="#">Cabang Klinik</a></li>
+                    {{-- <li class="nav-item"><a class="nav-link {{ request()->is('treatment') ? 'active' : '' }}"
+                            href="{{ route('treatment') }}">Treatment</a></li> --}}
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Treatments</a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="#" class="dropdown-item">Kategori A</a>
+                            <a href="#" class="dropdown-item">Kategori B</a>
+                            <a href="#" class="dropdown-item">Kategori C</a>
+                            <a href="#" class="dropdown-item">Kategori D</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produk</a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="#" class="dropdown-item">Kategori A</a>
+                            <a href="#" class="dropdown-item">Kategori B</a>
+                            <a href="#" class="dropdown-item">Kategori C</a>
+                            <a href="#" class="dropdown-item">Kategori D</a>
+                        </div>
+                    </div>
+                    {{-- <li class="nav-item"><a class="nav-link {{ request()->is('store') ? 'active' : '' }}"
+                            href="{{ route('store') }}">Store</a></li> --}}
+                    <li class="nav-item"><a class="nav-link {{ request()->is('dokter') ? 'active' : '' }}"
+                            href="{{ route('dokter') }}">Dokter</a></li>
+                    <li class="nav-item"><a class="btn btn-primary-emglow" href="{{ route('cabang-klinik') }}">Cabang
+                            Klinik</a></li>
                 </ul>
             </div>
         </div>

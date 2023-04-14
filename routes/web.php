@@ -19,7 +19,11 @@ Route::get('/', function () {
 });
 
 Route::get('/about', 'FrontEndController@about')->name('about');
-Route::get('/', 'FrontEndController@index')->name('index');
+Route::get('/treatment', 'FrontEndController@treatment')->name('treatment');
+Route::get('/store', 'FrontEndController@store')->name('store');
+Route::get('/dokter', 'FrontEndController@dokter')->name('dokter');
+Route::get('/cabang-klinik', 'FrontEndController@cabang')->name('cabang-klinik');
+Route::get('/', 'FrontEndController@index')->name('landing');
 
 Auth::routes(['register' => false]);
 

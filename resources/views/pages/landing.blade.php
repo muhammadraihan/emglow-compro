@@ -46,15 +46,19 @@
                         @foreach ($promo as $item)
                             <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="banner-thumbnail">
-                                    <div class="banner-img" style="background-image: url('{{ asset('photo/' . $item->photo) }}')"></div>
+                                    <div class="banner-img"
+                                        style="background-image: url('{{ asset('photo/' . $item->photo) }}')"
+                                        class="w-100">
+                                    </div>
+                                </div>
+                                <div class="text mt-4">
+                                    {{ $item->name }}
                                 </div>
                             </div>
+                        @endforeach
                     </div>
-                    {{ $item->name }}
-                @endforeach
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Products -->
@@ -86,32 +90,31 @@
                                 <div class="row bg-white justify-content-center align-items-center py-3 px-1">
 
                                     @foreach ($treatment as $item)
-                                    <div class="col-md-3 rounded-2">
-                                        <img class="img-fluid img-responsive rounded product-image"
-                                            src="{{ asset('photo/' . $item->photo) }}" alt="Treatment">
-                                    </div>
-                                    <div class="col-md-6 mt-2">
-                                        <h5>{{ $item->name }}</h5>
-                                        <p class="text-justify para mb-0">
-                                            {{ $item->deskripsi }}
-                                        </p>
-                                    </div>
-                                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                        <div class="d-flex flex-row align-items-center">
-                                            <h4 class="animate-charcter">
-                                                @if ($item->label == 2)
-                                                    Best Treatment
-                                                @else
-                                                    New Treatment
-                                                @endif
-                                            </h4>
+                                        <div class="col-md-3 rounded-2">
+                                            <img class="img-fluid img-responsive rounded product-image"
+                                                src="{{ asset('photo/' . $item->photo) }}" alt="Treatment">
                                         </div>
-                                        <h6 class="text-success">#Guarantee</h6>
-                                        <div class="d-flex flex-column mt-4"><button class="btn btn-primary-emglow btn-sm"
-                                                type="button">Book
-                                                Now</button></div>
-                                    </div>
-                                        
+                                        <div class="col-md-6 mt-2">
+                                            <h5>{{ $item->name }}</h5>
+                                            <p class="text-justify para mb-0">
+                                                {{ $item->deskripsi }}
+                                            </p>
+                                        </div>
+                                        <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+                                            <div class="d-flex flex-row align-items-center">
+                                                <h4 class="animate-charcter">
+                                                    @if ($item->label == 2)
+                                                        Best Treatment
+                                                    @else
+                                                        New Treatment
+                                                    @endif
+                                                </h4>
+                                            </div>
+                                            <h6 class="text-success">#Garansi #HealthyGlowSkin</h6>
+                                            <div class="d-flex flex-column mt-4"><button
+                                                    class="btn btn-primary-emglow btn-sm" type="button">Book
+                                                    Now</button></div>
+                                        </div>
                                     @endforeach
                                 </div>
                             </div>
@@ -145,15 +148,19 @@
                     </div>
                     <div class="row">
                         <!-- Single Product -->
+                        @php
+                            $incrementType = 0;
+                        @endphp
                         @foreach ($produk as $item)
                             <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in-up" data-aos-delay="100">
-                                <div id="product-1" class="single-product">
+                                <div id="product-{{ $incrementType += 1 }}" class="single-product"
+                                    style="background-image: url('{{ asset('photo/' . $item->photo) }}')">
                                     <div class="part-1">
                                         <span class="discount">{{ $item->Categories->name }}</span>
                                     </div>
                                     <div class="part-2 mb-4">
-                                        <h3 class="product-title text-truncate">{{ $item->name }}</h3>
-                                        <h4 class="product-price">{{ $item->deskripsi }}</h4>
+                                        <h4 class="product-price">{{ $item->name }}</h4>
+                                        <h3 class="product-title text-truncate">{{ $item->deskripsi }}</h3>
                                     </div>
                                     <button class="btn btn-outline-primary w-100 btn-sm rounded-pill">Lihat Detail</button>
                                 </div>
@@ -229,7 +236,7 @@
                     </div>
                     <div class="col-12 col-md-6" data-aos="fade-up-left">
                         <h4>
-                                New Treatment !!
+                            New Treatment !!
                         </h4>
                         <h1 class="title">{{ $item->name }}</h1>
                         <p class="desc">
@@ -261,7 +268,8 @@
                 <div class="owl-carousel awards-carousel owl-theme px-5" data-aos="fade-up" data-aos-duration="300">
                     <div class="item">
                         <div class="card">
-                            <img src="{{ asset('photo/' . $item->photo) }}" class="card-img-top rounded-top" alt="profile-image">
+                            <img src="{{ asset('photo/' . $item->photo) }}" class="card-img-top rounded-top"
+                                alt="profile-image">
                             <div class="card-body">
                                 <h5 class="card-title mb-2">{{ $item->name }}</h5>
                                 {{-- <span class="card-subtitle text-gray font-weight-normal">Oktober 2022</span> --}}
@@ -270,7 +278,7 @@
                         </div>
                     </div>
             @endforeach
-            </div>
+        </div>
     </section>
     {{-- End Awards --}}
 
@@ -280,20 +288,20 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-md-4" data-aos="fade-right" data-aos-duration="1000">
                     @foreach ($youtube as $item)
-                            <div class="h4">
-                                {{ $item->name }}
-                            </div>
-                            <p>
-                                {{ $item->detail }}
-                            </p>
+                        <div class="h4">
+                            {{ $item->name }}
                         </div>
-                        <div class="col-12 col-md-8" data-aos="fade-left" data-aos-duration="1200">
-                            <iframe width="699" height="393" src="https://www.youtube.com/embed/{{ $item->link }}"
-                                title="Dengar Kata Dokter - Episode 1 | eMGlow Aesthetic Centre by dr. Marlina" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowfullscreen></iframe>
-                        </div>
-                    @endforeach
+                        <p>
+                            {{ $item->detail }}
+                        </p>
+                </div>
+                <div class="col-12 col-md-8" data-aos="fade-left" data-aos-duration="1200">
+                    <iframe width="699" height="393" src="https://www.youtube.com/embed/{{ $item->link }}"
+                        title="Dengar Kata Dokter - Episode 1 | eMGlow Aesthetic Centre by dr. Marlina" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                @endforeach
             </div>
         </div>
         <!--jumbo-->
@@ -307,7 +315,7 @@
         <div class="container">
             <div class="content">
                 <div class="row d-flex justify-content-center">
-                    @foreach ($edukasi as $item)
+                    @forelse ($edukasi as $item)
                         <div class="col-12 col-md-6 mt-3" data-aos="fade-up-right" data-aos-duration="1000">
                             <div class="cta mt-4 mb-3">Tahukah Kamu?</div>
                             <p class="education mb-4">
@@ -316,9 +324,13 @@
                             <button class="btn btn-accent-emglow">Lihat selengkapnya</button>
                         </div>
                         <div class="col-12 col-md-4" data-aos="fade-up-left" data-aos-duration="1200">
-                            <img src="{{ asset('photo/' . $item->photo) }}" alt="Dokmar" class="w-100">
+                            <img src="{{ asset('photo/' . $item->photo) }}" alt="Foto Treatment" class="w-100">
                         </div>
-                    @endforeach
+                    @empty
+                        <div class="col-12 col-md-12">
+                            EMPTY
+                        </div>
+                    @endforelse
                 </div>
             </div>
         </div>

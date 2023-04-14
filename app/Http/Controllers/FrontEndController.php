@@ -11,12 +11,10 @@ use App\Models\Karir;
 use App\Models\Logo;
 use App\Models\Penghargaan;
 use App\Models\Produk;
-use App\Models\Produk_kategori;
 use App\Models\Promo;
 use App\Models\Reseller;
 use App\Models\SocialMedia;
 use App\Models\Treatment;
-use App\Models\Treatment_kategori;
 use App\Models\Youtube;
 
 class FrontEndController extends Controller
@@ -54,5 +52,33 @@ class FrontEndController extends Controller
         $about = About::all();
 
         return view('pages.about', compact('about'));
+    }
+
+    public function cabang()
+    {
+        $cabang = Cabang::all();
+
+        return view('pages.cabang-klinik', compact('cabang'));
+    }
+
+    public function treatment()
+    {
+        $treatment = Treatment::all();
+
+        return view('pages.treatment', compact('treatment'));
+    }
+
+    public function store()
+    {
+        $produk = Produk::all();
+
+        return view('pages.store', compact('produk'));
+    }
+
+    public function dokter()
+    {
+        $dokter = Dokter::all();
+
+        return view('pages.dokter', compact('dokter'));
     }
 }
