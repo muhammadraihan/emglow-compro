@@ -29,7 +29,7 @@
                             <a href="#" class="dropdown-item">Kategori D</a>
                         </div>
                     </div>
-                    <div class="nav-item dropdown">
+                    {{-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produk</a>
                         <div class="dropdown-menu bg-light m-0">
                             <a href="#" class="dropdown-item">Kategori A</a>
@@ -37,11 +37,13 @@
                             <a href="#" class="dropdown-item">Kategori C</a>
                             <a href="#" class="dropdown-item">Kategori D</a>
                         </div>
-                    </div>
-                    {{-- <li class="nav-item"><a class="nav-link {{ request()->is('store') ? 'active' : '' }}"
-                            href="{{ route('store') }}">Store</a></li> --}}
+                    </div> --}}
+                    <li class="nav-item"><a class="nav-link {{ request()->is('store') ? 'active' : '' }}"
+                            href="{{ route('store') }}">Store</a></li>
                     <li class="nav-item"><a class="nav-link {{ request()->is('dokter') ? 'active' : '' }}"
                             href="{{ route('dokter') }}">Dokter</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="#">Reseller</a></li>
                     <li class="nav-item"><a class="btn btn-primary-emglow" href="{{ route('cabang-klinik') }}">Cabang
                             Klinik</a></li>
                 </ul>

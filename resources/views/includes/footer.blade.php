@@ -23,11 +23,12 @@
                     <li><a href="#">Treatment</a></li>
                     <li><a href="#">Skincare</a></li>
                     <li><a href="#">Kontak</a></li>
+                    <li><a href="#">Karir</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="mb-3">Berlangganan</h5>
-                <p class="small text-muted">Dapatkan informasi dan promo dari eMGlow Aesthetic Centre dengan selalu
+                <p class="small text-muted mb-4">Dapatkan informasi dan promo dari eMGlow Aesthetic Centre dengan selalu
                     berlangganan newsletter kami.</p>
                 <form action="#">
                     <div class="input-group mb-3">

@@ -81,4 +81,11 @@ class FrontEndController extends Controller
 
         return view('pages.dokter', compact('dokter'));
     }
+
+    public function treatmentDetail()
+    {
+        $treatmentDetail = Treatment::all();
+
+        return view('pages.treatment-detail', compact('treatmentDetail'));
+    }
 }

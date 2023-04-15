@@ -766,6 +766,10 @@ footer .copyright p {
     margin: 0;
 }
 
+footer ul li {
+    margin-bottom: 12px;
+}
+
 /* RESPONSIVE SIDE */
 
 @media (max-width: 767.98px) {
@@ -1114,6 +1118,78 @@ Promos Style
 
 /* TREATMENT */
 
+.box {
+    padding: 40px 30px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    border-radius: 24px;
+    border: 1px solid #ddd;
+}
+
+.box:hover {
+    box-shadow: 2px 2px 10px #a5a5a5;
+    transform: scale(1.03);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.emglow-treatment img {
+    object-fit: contain;
+    width: 320px;
+    height: auto;
+    /* padding: 20px; */
+}
+
+
+
+p.text-muted {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+b {
+    font-size: 1.12rem;
+}
+
+.blue {
+    background-color: #bedcfa;
+    transform: rotateZ(90deg);
+}
+
+.pale-blue {
+    background-color: #eff8ff;
+}
+
+.pale-orange {
+    background-color: #ffe5b9;
+}
+
+.pale-purple {
+    background-color: #e8e8e8;
+}
+
+.pale-cyan {
+    background-color: #cffffe;
+}
+
+.pale-pink {
+    background-color: #ffe4e4;
+}
+
+.pale-pale {
+    background-color: #f4eeff;
+}
+
+.pale-green {
+    background-color: #a0ffe6;
+}
+
+.pale-pista {
+    background-color: #dbf6e9;
+}
+
 .content-treatment .category-name {
     padding: 1rem 0;
     text-align: center;
@@ -1168,6 +1244,132 @@ Promos Style
     color: #767E7E;
     font-weight: 400;
     margin-bottom: 14px;
+}
+
+.store-background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+
+.t-products {
+    background-image: linear-gradient(to right top, #5629c0, #5625cb, #5620d5, #551ae0, #5412eb);
+    color: #fff;
+    border-radius: 3px
+}
+
+.processor {
+    background-color: white;
+    margin-top: 5px;
+    border-bottom: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.brand {
+    background-color: #fff;
+    border-bottom: 1px solid #eee
+}
+
+.store .product .about h5 {
+    font-family: var(--poppins);
+    font-size: 18px;
+    color: var(--emglow-black);
+    font-weight: 700;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.product {
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.product img {
+    height: 160px;
+    object-fit: cover;
+}
+
+.about span {
+    color: #5629c0;
+    font-size: 16px;
+}
+
+.cart-button button {
+    font-size: 12px;
+    color: #fff;
+    background-color: #5629c0;
+    height: 38px;
+}
+
+.cart-button button:focus,
+button:active {
+    font-size: 12px;
+    color: #fff;
+    background-color: #5629c0;
+    box-shadow: none;
+}
+
+.product_fav i {
+    line-height: 40px;
+    color: #5629c0;
+    font-size: 15px;
+}
+
+.product_fav {
+    display: inline-block;
+    width: 36px;
+    height: 39px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 11%;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3px;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.product_fav:hover {
+    background: #5629c0;
+}
+
+.product_fav:hover i {
+    color: #fff;
+}
+
+.about {
+    margin-top: 12px;
+}
+
+.off {
+    position: absolute;
+    left: 65%;
+    top: 6%;
+    width: 80px;
+    text-align: center;
+    height: 30px;
+    line-height: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.store .btn-link {
+    list-style: none;
+    text-decoration: none;
+    color: var(--emglow-black);
 }
 
 /* DOKTER */
@@ -1258,4 +1460,151 @@ Promos Style
     font-size: 12px;
     color: #a5a5a5;
     letter-spacing: 1px;
+}
+
+/* Treatment Detail*/
+
+.text-bold {
+    font-weight: 800;
+}
+
+text-color {
+    color: #0093c4;
+}
+
+/* Main image - left */
+.main-img img {
+    width: 100%;
+}
+
+/* Preview images */
+.previews img {
+    width: 100%;
+    height: 140px;
+}
+
+.main-description .category {
+    text-transform: uppercase;
+    color: #0093c4;
+}
+
+.main-description .product-title {
+    font-size: 2.5rem;
+}
+
+.old-price-discount {
+    font-weight: 600;
+}
+
+.new-price {
+    font-size: 2rem;
+}
+
+.details-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.buttons .block {
+    margin-right: 5px;
+}
+
+.quantity input {
+    border-radius: 0;
+    height: 40px;
+
+}
+
+
+.custom-btn {
+    text-transform: capitalize;
+    background-color: #0093c4;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 0;
+}
+
+.custom-btn:hover {
+    background-color: #0093c4 !important;
+    font-size: 18px;
+    color: white !important;
+}
+
+.similar-product img {
+    height: 320px;
+    object-fit: cover;
+    border-radius: 36px;
+    cursor: pointer;
+}
+
+.similar-product {
+    text-align: left;
+    margin-bottom: 24px;
+}
+
+.similar-product .text-muted {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.similar-product .title {
+    margin-top: 16px;
+    margin-bottom: 12px;
+    font-family: var(--bai);
+    font-size: 24px;
+    color: var(--emglow-black);
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.similar-product .price {
+    font-weight: bold;
+}
+
+.questions .icon i {
+    font-size: 2rem;
+}
+
+.questions-icon {
+    font-size: 2rem;
+    color: #0093c4;
+}
+
+.btn-outline-emglow {
+    background-color: transparent;
+    border: 1px solid var(--emglow-accent);
+    border-radius: 24px;
+    padding: 8px 24px;
+    color: var(--emglow-accent);
+    font-family: var(--poppins);
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-outline-emglow:hover {
+    background-color: var(--emglow-accent);
+    color: white;
+}
+
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    /* Make preview images responsive  */
+    .previews img {
+        width: 100%;
+        height: auto;
+    }
+
 }
