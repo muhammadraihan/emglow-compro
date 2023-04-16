@@ -18,50 +18,21 @@
                             pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
                     </div>
 
-                    <div class="col-md-4 col-sm-4">
-                        <div class="team-member">
-                            <div class="team-img"
-                                style="background-image: url('https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg')">
+                    @foreach ($dokter as $item)
+                        <div class="col-md-4 col-sm-4">
+                            <div class="team-member">
+                                <div class="team-img"
+                                    style="background-image: url('{{ asset('photo/' . $item->photo) }}')">
+                                </div>
+                            </div>
+                            <div class="team-title">
+                                <h5 class="mb-2">{{ $item->name }}</h5>
+                                <div class="subtitle text-uppercase">{{ $item->Cabang->name }}</div>
+                                <div class="subtitle">{!! $item->jadwal !!}</div>
+                                <div class="subtitle mt-4 text-dark">{!! $item->deskripsi !!}</div>
                             </div>
                         </div>
-                        <div class="team-title">
-                            <h5 class="mb-2">Linda Anderson</h5>
-                            <div class="subtitle text-uppercase">Cabang A</div>
-                            <div class="subtitle">Jadwal</div>
-                            <div class="subtitle mt-4 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum non itaque facilis nulla
-                                aut odit. Porro doloremque saepe earum sint ipsum hic nihil nam?</div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <div class="team-member">
-                            <div class="team-img"
-                                style="background-image: url('https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg')">
-                            </div>
-                        </div>
-                        <div class="team-title">
-                            <h5 class="mb-2">Linda Anderson</h5>
-                            <div class="subtitle text-uppercase">Cabang A</div>
-                            <div class="subtitle">Jadwal</div>
-                            <div class="subtitle mt-4 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum non itaque facilis nulla
-                                aut odit. Porro doloremque saepe earum sint ipsum hic nihil nam?</div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                        <div class="team-member">
-                            <div class="team-img"
-                                style="background-image: url('https://image.freepik.com/free-photo/well-dressed-executive-with-crossed-arms_1098-3930.jpg')">
-                            </div>
-                        </div>
-                        <div class="team-title">
-                            <h5 class="mb-2">Linda Anderson</h5>
-                            <div class="subtitle text-uppercase">Cabang A</div>
-                            <div class="subtitle">Jadwal</div>
-                            <div class="subtitle mt-4 text-dark">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum non itaque facilis nulla
-                                aut odit. Porro doloremque saepe earum sint ipsum hic nihil nam?</div>
-                        </div>
-                    </div>
+                    @endforeach
 
                 </div>
             </div>

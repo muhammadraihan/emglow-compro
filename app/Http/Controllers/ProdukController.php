@@ -93,6 +93,7 @@ class ProdukController extends Controller
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori = $request->kategori;
         $produk->photo = $request->photo;
+        $produk->link = $request->link;
 
         if ($image = $request->file('photo')) {
             $destinationPath = 'photo/';
@@ -159,6 +160,7 @@ class ProdukController extends Controller
         $produk->name = $request->name;
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori = $request->kategori;
+        $produk->link = $request->link;
 
         if($request->hasFile('photo')){
 

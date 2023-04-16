@@ -63,6 +63,13 @@
                         @endif
                     </div>
                     <div class="form-group col-md-4 mb-3">
+                        {{ Form::label('link','Link Produk',['class' => 'required form-label'])}}
+                        {{ Form::textarea('link',$produk->link,['placeholder' => 'Link Produk','class' => 'form-control '.($errors->has('link') ? 'is-invalid':''),'required', 'autocomplete' => 'off'])}}
+                        @if ($errors->has('link'))
+                        <div class="invalid-feedback">{{ $errors->first('link') }}</div>
+                        @endif
+                    </div>
+                    <div class="form-group col-md-4 mb-3">
                         {{ Form::label('photo','Photo',['class' => 'required form-label'])}}
                         <input type="hidden" name="oldImage" value="{{ $produk->photo }}"> 
                         @if ($produk->photo)

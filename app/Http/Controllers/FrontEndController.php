@@ -82,10 +82,11 @@ class FrontEndController extends Controller
         return view('pages.dokter', compact('dokter'));
     }
 
-    public function treatmentDetail()
+    public function treatmentDetail($id)
     {
-        $treatmentDetail = Treatment::all();
+        $treatmentDetail = Treatment::uuid($id);
+        $result = Treatment::all()->where('uuid', 'like', $treatmentDetail->uuid);
 
-        return view('pages.treatment-detail', compact('treatmentDetail'));
+        return view('pages.treatment-detail', compact('treatmentDetail', 'result'));
     }
 }

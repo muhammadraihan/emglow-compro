@@ -18,9 +18,9 @@
                             aria-current="page" href="{{ route('landing') }}">Beranda</a></li>
                     <li class="nav-item"><a class="nav-link {{ request()->is('about') ? 'active' : '' }}"
                             href="{{ route('about') }}">Tentang Kami</a></li>
-                    {{-- <li class="nav-item"><a class="nav-link {{ request()->is('treatment') ? 'active' : '' }}"
-                            href="{{ route('treatment') }}">Treatment</a></li> --}}
-                    <div class="nav-item dropdown">
+                    <li class="nav-item"><a class="nav-link {{ request()->is('treatment') ? 'active' : '' }}"
+                            href="{{ route('treatment') }}">Treatment</a></li>
+                    {{-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Treatments</a>
                         <div class="dropdown-menu bg-light m-0">
                             <a href="#" class="dropdown-item">Kategori A</a>
@@ -28,7 +28,7 @@
                             <a href="#" class="dropdown-item">Kategori C</a>
                             <a href="#" class="dropdown-item">Kategori D</a>
                         </div>
-                    </div>
+                    </div> --}}
                     {{-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produk</a>
                         <div class="dropdown-menu bg-light m-0">

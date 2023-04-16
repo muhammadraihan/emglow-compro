@@ -12,7 +12,7 @@ class Produk extends Model
     use Uuid;
 
     protected $fillable = [
-        'name', 'kategori', 'deskripsi', 'photo'
+        'name', 'kategori', 'deskripsi', 'photo', 'link'
     ];
 
     public function Categories(){

@@ -41,6 +41,7 @@
                 <th>Kategori</th>
                 <th>Nama Produk</th>
                 <th>Deskripsi</th>
+                <th>Link Produk</th>
                 <th>Photo</th>
                 <th width="120px">Action</th>
                 </tr>
@@ -110,6 +111,7 @@
             {data: 'kategori', name: 'kategori'},
             {data: 'name', name: 'name'},
             {data: 'deskripsi', name: 'deskripsi'},
+            {data: 'link', name: 'link'},
             {data: 'photo', name: 'photo'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]

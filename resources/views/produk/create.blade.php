@@ -64,6 +64,13 @@
                         @endif
                     </div>
                     <div class="form-group col-md-4 mb-3">
+                        {{ Form::label('link','Link Produk',['class' => 'required form-label'])}}
+                        {{ Form::textarea('link',null,['placeholder' => 'Link Produk','class' => 'form-control '.($errors->has('link') ? 'is-invalid':''),'required', 'autocomplete' => 'off'])}}
+                        @if ($errors->has('link'))
+                        <div class="invalid-feedback">{{ $errors->first('link') }}</div>
+                        @endif
+                    </div>
+                    <div class="form-group col-md-4 mb-3">
                         {{ Form::label('photo','Photo',['class' => 'required form-label'])}}
                         {{ Form::file('photo',null,['placeholder' => 'Photo','class' => 'form-control upload '.($errors->has('photo') ? 'is-invalid':''),'required', 'autocomplete' => 'off', 'id' => 'photo'])}}
                         <img id="preview-image-before-upload" src="https://www.riobeauty.co.uk/images/product_image_not_found.gif"

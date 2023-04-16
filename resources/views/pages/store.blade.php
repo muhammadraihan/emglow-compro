@@ -74,24 +74,11 @@
                         <div class="d-flex justify-content-between mt-2">
                             <a href="#" class="btn btn-link">Semua</a>
                         </div>
-                        <div class="d-flex justify-content-between mt-2">
-                            <a href="#" class="btn btn-link">Terbaru</a>
-                        </div>
-                        <div class="d-flex justify-content-between mt-2">
-                            <a href="#" class="btn btn-link">Kategori A</a>
-                        </div>
-                        <div class="d-flex justify-content-between mt-2">
-                            <a href="#" class="btn btn-link">Kategori B</a>
-                        </div>
-                        <div class="d-flex justify-content-between mt-2">
-                            <a href="#" class="btn btn-link">Kategori C</a>
-                        </div>
-                        <div class="d-flex justify-content-between mt-2">
-                            <a href="#" class="btn btn-link">Kategori D</a>
-                        </div>
-                        <div class="d-flex justify-content-between mt-2">
-                            <a href="#" class="btn btn-link">Kategori E</a>
-                        </div>
+                        @foreach ($produk as $item)
+                            <div class="d-flex justify-content-between mt-2">
+                                <a href="#" class="btn btn-link">{{ $item->Categories->name }}</a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-md-9">

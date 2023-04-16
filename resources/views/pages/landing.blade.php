@@ -111,9 +111,9 @@
                                                 </h4>
                                             </div>
                                             <h6 class="text-success">#Garansi #HealthyGlowSkin</h6>
-                                            <div class="d-flex flex-column mt-4"><button
+                                            {{-- <div class="d-flex flex-column mt-4"><button
                                                     class="btn btn-primary-emglow btn-sm" type="button">Book
-                                                    Now</button></div>
+                                                    Now</button></div> --}}
                                         </div>
                                     @endforeach
                                 </div>
@@ -123,9 +123,12 @@
                             <div class="col-12">
                                 <div class="row justify-content-center">
                                     <div class="col-6 col-md-3">
+                                        <a class="nav-link {{ request()->is('treatment') ? 'active' : '' }}"
+                                            href="{{ route('treatment') }}">
                                         <button
-                                            class="btn btn-outline-primary btn-sm w-100 rounded-pill lainnya-sm">Treatment
+                                            class="btn btn-outline-primary btn-sm w-100 rounded-pill lainnya-sm" >Treatment
                                             Lainnya</button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +165,9 @@
                                         <h4 class="product-price">{{ $item->name }}</h4>
                                         <h3 class="product-title text-truncate">{{ $item->deskripsi }}</h3>
                                     </div>
-                                    <button class="btn btn-outline-primary w-100 btn-sm rounded-pill">Lihat Detail</button>
+                                    <a href="{{ $item->link }}">
+                                        <button class="btn btn-outline-primary w-100 btn-sm rounded-pill">Lihat Detail</button>
+                                    </a>
                                 </div>
                             </div>
                         @endforeach
@@ -170,8 +175,11 @@
 
                     <div class="d-flex justify-content-center row mt-2">
                         <div class="col-6 col-md-3">
+                            <a class="nav-link {{ request()->is('store') ? 'active' : '' }}"
+                                href="{{ route('store') }}">
                             <button class="btn btn-primary-emglow btn-sm w-100 rounded-pill">Lihat Produk
                                 Lainnya</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -242,10 +250,12 @@
                         <p class="desc">
                             {{ $item->deskripsi }}
                         </p>
-                        <a href="http://" target="_blank" class="btn btn-primary-emglow">Booking Sekarang</a>
+                        @endforeach
+                        @foreach ($about as $item)
+                            <a href="{{ 'http://wa.me/'. $item->no_tlp }}" target="_blank" class="btn btn-primary-emglow">Booking Sekarang</a>
+                        @endforeach
                     </div>
                 </div>
-            @endforeach
         </div>
     </section>
     <!-- End -->

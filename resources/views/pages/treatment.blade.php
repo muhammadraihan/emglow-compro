@@ -12,58 +12,16 @@
         <div class="container mt-5">
             <div class="container similar-products my-4">
                 <div class="row">
-                    <div class="col-12 col-md-4 col-lg-6">
-                        <div class="similar-product">
-                            <img class="w-100" src="/assets/Complete Pico Biaxis_Laser Full Face.png" alt="Preview">
-                            <p class="title">Complete Pico Biaxis Laser Full Face</p>
-                            <div class="text-muted mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Accusantium reiciendis unde voluptatum! Quae iure nesciunt sit. Beatae quod id sint ut ipsam
-                                cum blanditiis dolores provident est nihil harum temporibus ea autem facere culpa voluptate
-                                cumque accusamus odit soluta molestias voluptates facilis, aliquid, porro hic. Cupiditate
-                                obcaecati commodi quod porro repellendus quia consequuntur quasi, delectus excepturi maiores
-                                voluptatum nemo labore.</div>
-                            <a href="#" class="btn btn-outline-emglow">Lihat Detail</a>
+                    @foreach ($treatment as $item)
+                        <div class="col-12 col-md-4 col-lg-6">
+                            <div class="similar-product">
+                                <img class="w-100" src="{{ asset('photo/' . $item->photo) }}" alt="Preview">
+                                <p class="title">{{ $item->name }}</p>
+                                <div class="text-muted mb-4">{!! $item->deskripsi !!}</div>
+                                <a href="{{ route('treatment-detail', $item->uuid)}}" class="btn btn-outline-emglow">Lihat Detail</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-6">
-                        <div class="similar-product">
-                            <img class="w-100" src="/assets/Crystal Skin IPL Infusion.png" alt="Preview">
-                            <p class="title">Crystal Skin IPL Infusion</p>
-                            <div class="text-muted mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Accusantium reiciendis unde voluptatum! Quae iure nesciunt sit. Beatae quod id sint ut ipsam
-                                cum blanditiis dolores provident est nihil harum temporibus ea autem facere culpa voluptate
-                                cumque accusamus odit soluta molestias voluptates facilis, aliquid, porro hic. Cupiditate
-                                obcaecati commodi quod porro repellendus quia consequuntur quasi, delectus excepturi maiores
-                                voluptatum nemo labore.</div>
-                            <a href="#" class="btn btn-outline-emglow">Lihat Detail</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-6">
-                        <div class="similar-product">
-                            <img class="w-100" src="/assets/Crystal Cryopolisis_Shape and Slim Body.png" alt="Preview">
-                            <p class="title">Crystal Cryopolisis Shape and Slim Body</p>
-                            <div class="text-muted mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Accusantium reiciendis unde voluptatum! Quae iure nesciunt sit. Beatae quod id sint ut ipsam
-                                cum blanditiis dolores provident est nihil harum temporibus ea autem facere culpa voluptate
-                                cumque accusamus odit soluta molestias voluptates facilis, aliquid, porro hic. Cupiditate
-                                obcaecati commodi quod porro repellendus quia consequuntur quasi, delectus excepturi maiores
-                                voluptatum nemo labore.</div>
-                            <a href="#" class="btn btn-outline-emglow">Lihat Detail</a>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-4 col-lg-6">
-                        <div class="similar-product">
-                            <img class="w-100" src="/assets/Crystal Skin IPL Infusion.png" alt="Preview">
-                            <p class="title">Crystal Skin IPL Infusion</p>
-                            <div class="text-muted mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Accusantium reiciendis unde voluptatum! Quae iure nesciunt sit. Beatae quod id sint ut ipsam
-                                cum blanditiis dolores provident est nihil harum temporibus ea autem facere culpa voluptate
-                                cumque accusamus odit soluta molestias voluptates facilis, aliquid, porro hic. Cupiditate
-                                obcaecati commodi quod porro repellendus quia consequuntur quasi, delectus excepturi maiores
-                                voluptatum nemo labore.</div>
-                            <a href="#" class="btn btn-outline-emglow">Lihat Detail</a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
