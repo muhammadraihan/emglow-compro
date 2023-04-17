@@ -87,7 +87,12 @@ class ResellerController extends Controller
         $reseller = new Reseller();
         $reseller->wilayah_reseller = $request->wilayah_reseller;
         $reseller->deskripsi = $request->deskripsi;
-        $reseller->telephone = $request->telephone;
+        $telephone = $request->telephone;
+        if (substr($telephone, 0, 1) === "0") {
+            $telephone = "62" . substr($telephone, 1);
+        }
+
+        $reseller->telephone = $telephone;
         $reseller->photo = $request->photo;
 
         if ($image = $request->file('photo')) {
@@ -154,7 +159,12 @@ class ResellerController extends Controller
         $reseller = Reseller::uuid($id);
         $reseller->wilayah_reseller = $request->wilayah_reseller;
         $reseller->deskripsi = $request->deskripsi;
-        $reseller->telephone = $request->telephone;
+        $telephone = $request->telephone;
+        if (substr($telephone, 0, 1) === "0") {
+            $telephone = "62" . substr($telephone, 1);
+        }
+
+        $reseller->telephone = $telephone;
 
         if($request->hasFile('photo')){
 

@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/assets/logo.png" class="w-100 img-responsive" alt="Logo" srcset="">
+                <img src="/assets/logo.png" class=" img-responsive" alt="Logo" srcset="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -20,8 +20,18 @@
                             href="{{ route('about') }}">Tentang Kami</a></li>
                     <li class="nav-item"><a class="nav-link {{ request()->is('treatment') ? 'active' : '' }}"
                             href="{{ route('treatment') }}">Treatment</a></li>
-                    <li class="nav-item"><a class="nav-link {{ request()->is('store') ? 'active' : '' }}"
-                            href="{{ route('store') }}">Store</a></li>
+                    {{-- <li class="nav-item"><a class="nav-link {{ request()->is('store') ? 'active' : '' }}"
+                            href="{{ route('store') }}">Store</a></li> --}}
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Store</a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="{{ route('produkAll') }}" class="dropdown-item">Semua</a>
+                            @foreach ($kategori as $item)
+                            <a href="{{ route('produk', $item->uuid)}}" class="dropdown-item">{{$item->name}}</a>
+                            @endforeach
+                            {{-- <a href="download.html" class="dropdown-item">Paket Haji</a> --}}
+                        </div>
+                    </div>
                     <li class="nav-item"><a class="nav-link {{ request()->is('dokter') ? 'active' : '' }}"
                             href="{{ route('dokter') }}">Dokter</a></li>
                     <li class="nav-item"><a class="nav-link {{ request()->is('cabang-klinik') ? 'active' : '' }}" href="{{ route('cabang-klinik') }}">Cabang

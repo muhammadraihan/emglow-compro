@@ -34,6 +34,16 @@ class ProdukController extends Controller
                 ->editColumn('kategori', function ($row){
                     return $row->Categories->name;
                 })
+                ->editColumn('label', function ($row){
+                    switch ($row->label) {
+                        case '1':
+                            return '<span class="badge badge-success">New Product</span>';
+                            break;
+                        case '2':
+                            return '<span class="badge badge-danger">Best Product</span>';
+                            break;
+                    }
+                })
                 ->editColumn('photo', function ($row){
                     $url = asset('photo');
                     return '<image style="width: 150px; height: 150px;"  src="'.$url.'/'.$row->photo.'" alt="">';
@@ -45,7 +55,7 @@ class ProdukController extends Controller
                 })
                 ->removeColumn('id')
                 ->removeColumn('uuid')
-                ->rawColumns(['action','photo'])
+                ->rawColumns(['action','photo','label'])
                 ->make(true);
         }
 
@@ -94,6 +104,7 @@ class ProdukController extends Controller
         $produk->kategori = $request->kategori;
         $produk->photo = $request->photo;
         $produk->link = $request->link;
+        $produk->label = $request->label;
 
         if ($image = $request->file('photo')) {
             $destinationPath = 'photo/';
@@ -143,7 +154,7 @@ class ProdukController extends Controller
         $rules = [
             'name' => 'required',
             'deskripsi' => 'required',
-            'kategori' => 'required'
+            'kategori' => 'required',
         ];
 
         $messages = [
@@ -161,6 +172,7 @@ class ProdukController extends Controller
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori = $request->kategori;
         $produk->link = $request->link;
+        $produk->label = $request->label;
 
         if($request->hasFile('photo')){
 

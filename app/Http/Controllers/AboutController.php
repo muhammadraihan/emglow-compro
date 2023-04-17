@@ -93,7 +93,12 @@ class AboutController extends Controller
         $about->sejarah = $request->sejarah;
         $about->nama_cv = $request->nama_cv;
         $about->alamat = $request->alamat;
-        $about->no_tlp = $request->no_tlp;
+        $no_tlp = $request->no_tlp;
+        if (substr($no_tlp, 0, 1) === "0") {
+            $no_tlp = "62" . substr($no_tlp, 1);
+        }
+
+        $about->no_tlp = $no_tlp;
         $about->photo = $request->photo;
 
         if ($image = $request->file('photo')) {
@@ -165,7 +170,12 @@ class AboutController extends Controller
         $about->sejarah = $request->sejarah;
         $about->nama_cv = $request->nama_cv;
         $about->alamat = $request->alamat;
-        $about->no_tlp = $request->no_tlp;
+        $no_tlp = $request->no_tlp;
+        if (substr($no_tlp, 0, 1) === "0") {
+            $no_tlp = "62" . substr($no_tlp, 1);
+        }
+
+        $about->no_tlp = $no_tlp;
 
         if($request->hasFile('photo')){
 

@@ -7,7 +7,7 @@
 @section('content')
     <section class="emglow-treatment">
         <div class="header-section">
-            <div class="title">Nama Kategori</div>
+            <div class="title">Treatment</div>
         </div>
         <div class="container mt-5">
             <div class="container similar-products my-4">

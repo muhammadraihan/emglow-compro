@@ -38,6 +38,7 @@
         <thead>
             <tr>
                 <th>No</th>
+                <th>Label</th>
                 <th>Kategori</th>
                 <th>Nama Produk</th>
                 <th>Deskripsi</th>
@@ -108,6 +109,7 @@
             },
             "columns": [
             {data: 'DT_RowIndex', name: 'DT_RowIndex'},
+            {data: 'label', name: 'label'},
             {data: 'kategori', name: 'kategori'},
             {data: 'name', name: 'name'},
             {data: 'deskripsi', name: 'deskripsi'},
