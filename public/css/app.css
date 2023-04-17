@@ -26,7 +26,7 @@ body {
 .navbar-emglow .nav-item .nav-link {
     color: #313131 !important;
     font-family: var(--poppins) !important;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .navbar-emglow .nav-item {
@@ -412,6 +412,12 @@ body {
 
 .section-products {
     padding: 72px 0 54px;
+}
+
+.section-products .about h5 {
+    font-family: var(--poppins);
+    font-weight: 600;
+    color: var(--emglow-black);
 }
 
 .section-products .header {
@@ -1587,4 +1593,78 @@ text-color {
         height: auto;
     }
 
+}
+
+/* Reseller */
+
+.reseller {
+    margin-bottom: 100px;
+}
+
+.reseller .header-section {
+    background-image: url('/../assets/bg-reseller.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.reseller .title {
+    font-size: 36px;
+    font-family: var(--bai);
+    font-weight: 700;
+    color: var(--emglow-black);
+    line-height: 48px;
+}
+
+.reseller .img-reseller img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.reseller .desc-box .h3 {
+    color: var(--emglow-primary);
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+.reseller .desc-box .desc {
+    color: #444444;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* Karir */
+
+.karir {
+    margin-bottom: 100px;
+}
+
+.karir .header-section {
+    background-image: url('/../assets/bg-karir.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.karir .title {
+    font-size: 36px;
+    font-family: var(--bai);
+    font-weight: 700;
+    color: var(--emglow-black);
+    line-height: 48px;
+}
+
+.karir .desc-box .h3 {
+    font-family: var(--poppins);
+    color: var(--emglow-black);
+    font-weight: 600;
+}
+
+.karir .desc-box .desc {
+    font-size: 14px;
+    color:#767E7E;
+    line-height: 26px;
+    font-weight: 400;
 }

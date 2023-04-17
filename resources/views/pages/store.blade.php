@@ -83,6 +83,7 @@
                 </div>
                 <div class="col-md-9">
                     <div class="row g-2">
+                        {{-- loop here --}}
                         <div class="col-md-4">
                             <a href="#">
                                 <div class="product p-4">
@@ -92,30 +93,10 @@
                                     <div class="about">
                                         <h5>Sunscreen</h5>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#">
-                                <div class="product p-4">
-                                    <div class="text-center">
-                                        <img src="/assets/Blush On.png" width="160">
-                                    </div>
-                                    <div class="about">
-                                        <h5>Blush On</h5>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a href="#">
-                                <div class="product p-4">
-                                    <div class="text-center">
-                                        <img src="/assets/cream.png" width="160">
-                                    </div>
-                                    <div class="about">
-                                        <h5>Night Cream</h5>
-                                    </div>
+                                    <a href="#">
+                                        <button class="btn btn-outline-primary w-100 mt-3">Lihat
+                                            Detail</button>
+                                    </a>
                                 </div>
                             </a>
                         </div>

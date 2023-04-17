@@ -11,6 +11,7 @@ use App\Models\Karir;
 use App\Models\Logo;
 use App\Models\Penghargaan;
 use App\Models\Produk;
+use App\Models\Produk_kategori;
 use App\Models\Promo;
 use App\Models\Reseller;
 use App\Models\SocialMedia;
@@ -71,8 +72,9 @@ class FrontEndController extends Controller
     public function store()
     {
         $produk = Produk::all();
+        $produkKategori = Produk_kategori::all();
 
-        return view('pages.store', compact('produk'));
+        return view('pages.store', compact('produk', 'produkKategori'));
     }
 
     public function dokter()
@@ -89,4 +91,19 @@ class FrontEndController extends Controller
 
         return view('pages.treatment-detail', compact('treatmentDetail', 'result'));
     }
+
+    public function reseller()
+    {
+        $reseller = Reseller::all();
+
+        return view('pages.reseller', compact('reseller'));
+    }
+
+    public function karir()
+    {
+        $karir = Karir::all();
+
+        return view('pages.karir', compact('karir'));
+    }
+    
 }

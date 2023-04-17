@@ -22,8 +22,11 @@ Route::get('/about', 'FrontEndController@about')->name('about');
 Route::get('/treatment', 'FrontEndController@treatment')->name('treatment');
 Route::get('/treatment-detail/{uuid}', 'FrontEndController@treatmentDetail')->name('treatment-detail');
 Route::get('/store', 'FrontEndController@store')->name('store');
+Route::get('/store/{uuid}', 'FrontEndController@storeDetail');
 Route::get('/dokter', 'FrontEndController@dokter')->name('dokter');
 Route::get('/cabang-klinik', 'FrontEndController@cabang')->name('cabang-klinik');
+Route::get('/reseller', 'FrontEndController@reseller')->name('reseller');
+Route::get('/karir', 'FrontEndController@karir')->name('karir');
 Route::get('/', 'FrontEndController@index')->name('landing');
 
 Auth::routes(['register' => false]);

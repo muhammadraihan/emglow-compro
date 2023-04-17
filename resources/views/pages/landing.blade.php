@@ -125,9 +125,9 @@
                                     <div class="col-6 col-md-3">
                                         <a class="nav-link {{ request()->is('treatment') ? 'active' : '' }}"
                                             href="{{ route('treatment') }}">
-                                        <button
-                                            class="btn btn-outline-primary btn-sm w-100 rounded-pill lainnya-sm" >Treatment
-                                            Lainnya</button>
+                                            <button
+                                                class="btn btn-outline-primary btn-sm w-100 rounded-pill lainnya-sm">Treatment
+                                                Lainnya</button>
                                         </a>
                                     </div>
                                 </div>
@@ -149,41 +149,43 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <!-- Single Product -->
-                        @php
-                            $incrementType = 0;
-                        @endphp
-                        @foreach ($produk as $item)
-                            <div class="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-in-up" data-aos-delay="100">
-                                <div id="product-{{ $incrementType += 1 }}" class="single-product"
-                                    style="background-image: url('{{ asset('photo/' . $item->photo) }}')">
-                                    <div class="part-1">
-                                        <span class="discount">{{ $item->Categories->name }}</span>
-                                    </div>
-                                    <div class="part-2 mb-4">
-                                        <h4 class="product-price">{{ $item->name }}</h4>
-                                        <h3 class="product-title text-truncate">{{ $item->deskripsi }}</h3>
-                                    </div>
-                                    <a href="{{ $item->link }}">
-                                        <button class="btn btn-outline-primary w-100 btn-sm rounded-pill">Lihat Detail</button>
-                                    </a>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
 
-                    <div class="d-flex justify-content-center row mt-2">
-                        <div class="col-6 col-md-3">
-                            <a class="nav-link {{ request()->is('store') ? 'active' : '' }}"
-                                href="{{ route('store') }}">
-                            <button class="btn btn-primary-emglow btn-sm w-100 rounded-pill">Lihat Produk
-                                Lainnya</button>
-                            </a>
-                        </div>
+                    <div class="row g-2">
+                        @forelse ($produk as $item)
+                            <div class="col-md-4">
+                                <a href="#">
+                                    <div class="product p-4">
+                                        <div class="text-center">
+                                            <img src="{{ asset('photo/' . $item->photo) }}" width="160">
+                                        </div>
+                                        <div class="about text-center mb-4">
+                                            <h5>{{ $item->name }}</h5>
+                                        </div>
+                                        <a href="{{ $item->link }}">
+                                            <button class="btn btn-outline-primary w-100">Lihat
+                                                Detail</button>
+                                        </a>
+                                    </div>
+                                </a>
+                            </div>
+                        @empty
+                            <div class="col-12">
+                                Empty
+                            </div>
+                        @endforelse
                     </div>
                 </div>
-            </section>
+
+                <div class="d-flex justify-content-center row mt-2">
+                    <div class="col-6 col-md-3">
+                        <a class="nav-link {{ request()->is('store') ? 'active' : '' }}" href="{{ route('store') }}">
+                            <button class="btn btn-primary-emglow btn-sm w-100 rounded-pill">Lihat Produk
+                                Lainnya</button>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </section>
     </section>
     <!-- End Products -->
 
@@ -250,12 +252,13 @@
                         <p class="desc">
                             {{ $item->deskripsi }}
                         </p>
-                        @endforeach
-                        @foreach ($about as $item)
-                            <a href="{{ 'http://wa.me/'. $item->no_tlp }}" target="_blank" class="btn btn-primary-emglow">Booking Sekarang</a>
-                        @endforeach
-                    </div>
-                </div>
+            @endforeach
+            @foreach ($about as $item)
+                <a href="{{ 'http://wa.me/' . $item->no_tlp }}" target="_blank" class="btn btn-primary-emglow">Booking
+                    Sekarang</a>
+            @endforeach
+        </div>
+        </div>
         </div>
     </section>
     <!-- End -->
