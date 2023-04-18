@@ -39,6 +39,16 @@
                     @endif
                     {!! Form::open(['route' => ['produk.update',$produk->uuid],'method' => 'PUT','class' =>
                     'needs-validation','novalidate', 'enctype' => 'multipart/form-data']) !!}
+                    <div class="form-group col-md-4 mb-3">
+                        {{ Form::label('label','Label',['class' => 'required form-label'])}}
+                        {!! Form::select('label', array('1' => 'New Treatment', '2' => 'Best Treatment'), $produk->label,
+                        ['id'=>'label','class'
+                        => 'custom-select'.($errors->has('label') ? 'is-invalid':'') ,'required'
+                        => '', 'placeholder' => 'Pilih Label ...'])!!}
+                        @if ($errors->has('label'))
+                        <div class="invalid-feedback">{{ $errors->first('label') }}</div>
+                        @endif
+                    </div>
                     <div class="form-group col-md-3 mb-3">
                         {{ Form::label('kategori','Kategori Produk',['class' => 'required form-label'])}}
                         {!! Form::select('kategori', $produk_kategori, $produk->kategori, ['id' =>
@@ -101,7 +111,7 @@
 <script>
     $(document).ready(function(){
         $('.kategori').select2();
-
+        $('#label').select2();
         $('#photo').change(function(){
             
             let reader = new FileReader();

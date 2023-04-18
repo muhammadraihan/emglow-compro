@@ -35,75 +35,93 @@ class FrontEndController extends Controller
         $karir = Karir::all();
         $logo = Logo::all();
         $award = Penghargaan::all();
-        $produk = Produk::all();
+        $produk = Produk::where('label', '=', '2')->get();
         $treatment = Treatment::where('label', '=', '2')->get();
         $reseller = Reseller::all();
         $promo = Promo::all();
         $sosmed = SocialMedia::all();
         $youtube = Youtube::all();
         $newtreatment = Treatment::where('label', '=', '1')->get();
+        $kategori = Produk_kategori::all();
 
         return view('pages.landing',
-        compact('about', 'cabang', 'dokter', 'edukasi', 'karir', 'logo', 'award', 'produk',
-        'treatment', 'reseller', 'promo', 'sosmed', 'youtube', 'newtreatment'));
+        compact('about', 'cabang', 'dokter', 'edukasi', 'karir', 'logo', 'award', 'kategori',
+        'treatment', 'reseller', 'promo', 'sosmed', 'youtube', 'newtreatment', 'produk'));
     }
 
     public function about()
     {
         $about = About::all();
+        $kategori = Produk_kategori::all();
 
-        return view('pages.about', compact('about'));
+        return view('pages.about', compact('about','kategori'));
     }
 
     public function cabang()
     {
         $cabang = Cabang::all();
+        $kategori = Produk_kategori::all();
 
-        return view('pages.cabang-klinik', compact('cabang'));
+        return view('pages.cabang-klinik', compact('cabang','kategori'));
     }
 
     public function treatment()
     {
         $treatment = Treatment::all();
+        $kategori = Produk_kategori::all();
 
-        return view('pages.treatment', compact('treatment'));
+        return view('pages.treatment', compact('treatment','kategori'));
     }
 
-    public function store()
+    public function produk($id)
+    {
+        $produkKategori = Produk_kategori::uuid($id);
+        $produk = Produk::where('kategori', $produkKategori->uuid)->get();
+        $kategori = Produk_kategori::all();
+
+        return view('pages.store', compact('produk', 'produkKategori','kategori'));
+    }
+
+    public function produkAll()
     {
         $produk = Produk::all();
-        $produkKategori = Produk_kategori::all();
+        $kategori = Produk_kategori::all();
 
-        return view('pages.store', compact('produk', 'produkKategori'));
+        return view('pages.store', compact('produk', 'kategori'));
     }
 
     public function dokter()
     {
         $dokter = Dokter::all();
+        $kategori = Produk_kategori::all();
 
-        return view('pages.dokter', compact('dokter'));
+        return view('pages.dokter', compact('dokter','kategori'));
     }
 
     public function treatmentDetail($id)
     {
         $treatmentDetail = Treatment::uuid($id);
         $result = Treatment::all()->where('uuid', 'like', $treatmentDetail->uuid);
+        $kategori = Produk_kategori::all();
+        $about = About::all();
 
-        return view('pages.treatment-detail', compact('treatmentDetail', 'result'));
+        return view('pages.treatment-detail', compact('treatmentDetail', 'result', 'kategori', 'about'));
     }
 
     public function reseller()
     {
         $reseller = Reseller::all();
+        $kategori = Produk_kategori::all();
 
-        return view('pages.reseller', compact('reseller'));
+        return view('pages.reseller', compact('reseller','kategori'));
     }
 
     public function karir()
     {
         $karir = Karir::all();
+        $kategori = Produk_kategori::all();
 
-        return view('pages.karir', compact('karir'));
+        return view('pages.karir', compact('karir','kategori'));
     }
     
 }

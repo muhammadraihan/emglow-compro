@@ -6,6 +6,9 @@
 
 @section('content')
     <section class="store mb-5">
+        <div class="header-section">
+            <div class="title">Product</div>
+        </div>
         {{-- <div class="container mt-5">
             <div class="content-store">
                 <div class="row justify-content-center">
@@ -66,7 +69,7 @@
         </div> --}}
         <div class="container-fluid mt-5 mb-5">
             <div class="row g-2">
-                <div class="col-md-3">
+                {{-- <div class="col-md-3">
                     <div class="processor p-4">
                         <div class="heading d-flex justify-content-between align-items-center">
                             <h6 class="text-uppercase">Koleksi</h6>
@@ -76,30 +79,33 @@
                         </div>
                         @foreach ($produk as $item)
                             <div class="d-flex justify-content-between mt-2">
-                                <a href="#" class="btn btn-link">{{ $item->Categories->name }}</a>
+                                <a href="#" class="btn btn-link">{{ $item->name }}</a>
                             </div>
                         @endforeach
                     </div>
-                </div>
+                </div> --}}
                 <div class="col-md-9">
                     <div class="row g-2">
                         {{-- loop here --}}
+                        @foreach ($produk as $item)
                         <div class="col-md-4">
                             <a href="#">
                                 <div class="product p-4">
                                     <div class="text-center">
-                                        <img src="/assets/sunscreen.png" width="160">
+                                        <img src="{{ asset('photo/' . $item->photo) }}" width="160">
                                     </div>
                                     <div class="about">
-                                        <h5>Sunscreen</h5>
+                                        <h5>{{ $item->name }}</h5>
                                     </div>
-                                    <a href="#">
+                                    <a href="{{ $item->link }}">
                                         <button class="btn btn-outline-primary w-100 mt-3">Lihat
                                             Detail</button>
                                     </a>
                                 </div>
                             </a>
                         </div>
+                        @endforeach
+                        
                     </div>
                 </div>
             </div>
