@@ -394,6 +394,18 @@ body {
     font-weight: 600;
 }
 
+.treatment-card .para {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.treatment-card img {
+    height: 128px;
+    object-fit: cover;
+}
+
 .section-products .btn-outline-primary {
     border-color: var(--emglow-primary) !important;
     color: var(--emglow-primary) !important;
@@ -565,6 +577,13 @@ body {
 
 .featured-treatment {
     background: #F4ECE9;
+}
+
+.featured-treatment .desc {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .featured-treatment h4 {
@@ -824,11 +843,22 @@ footer ul li {
         padding: 1rem 2rem;
     }
 
-    .featured-treatment .title {
+    .featured-treatment h4 {
         text-align: center;
         margin-top: 24px;
+        font-size: 15px;
+        color: var(--emglow-black);
+    }
+
+    .featured-treatment .title {
+        text-align: center;
+        margin-top: 16px;
         font-size: 36px;
         line-height: 48px;
+    }
+
+    .featured-treatment .container-btn-cta {
+        text-align: center;
     }
 
     .featured-treatment .desc {
@@ -1079,6 +1109,17 @@ Promos Style
     color: var(--emglow-black);
 }
 
+.about {
+    margin-bottom: 100px;
+}
+
+.about .header-section {
+    background: url('/../assets/bg-about.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .header-section .title {
     font-size: 48px;
     font-family: var(--bai);
@@ -1102,7 +1143,21 @@ Promos Style
     font-weight: 600;
 }
 
+.cabang-klinik .header-section {
+    background: url('/../assets/bg-cabang.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* TREATMENT */
+
+.emglow-treatment .header-section {
+    background: url('/../assets/bg-treatment.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .box {
     padding: 40px 30px;
@@ -1209,6 +1264,13 @@ b {
     border-radius: 24px;
 }
 
+.store .header-section {
+    background: url('/../assets/bg-store.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .store .content-store .container-product .photo-product {
     width: 100%;
     height: 100%;
@@ -1269,6 +1331,10 @@ b {
     text-align: center;
 }
 
+.store .product .about {
+    margin-bottom: 24px;
+}
+
 .product {
     background-color: #fff;
     border-radius: 8px;
@@ -1277,7 +1343,7 @@ b {
 }
 
 .product img {
-    height: 160px;
+    height: 200px;
     object-fit: cover;
 }
 
@@ -1364,6 +1430,13 @@ button:active {
     margin-bottom: 100px;
 }
 
+.dokter .header-section {
+    background: url('/../assets/bg-dokter.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .heading-title {
     margin-bottom: 100px;
 }
@@ -1387,9 +1460,16 @@ button:active {
 
 .team-member {
     width: 100%;
-    height: 248px;
+    height: 420px;
     overflow: hidden;
     border-radius: 24px;
+}
+
+.cabang-klinik .details h1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: var(--bai);
+    color: var(--emglow-black);
 }
 
 .team-img {
@@ -1435,7 +1515,6 @@ button:active {
 
 .team-title h5 {
     display: block;
-    text-transform: uppercase;
     color: var(--emglow-primary);
     font-family: var(--bai);
     font-weight: 700;
@@ -1593,6 +1672,14 @@ text-color {
         height: auto;
     }
 
+    .about .history {
+        text-align: center;
+    }
+
+    .product img {
+        height: auto;
+    }
+
 }
 
 /* Reseller */
@@ -1606,7 +1693,6 @@ text-color {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.7;
 }
 
 .reseller .title {
@@ -1664,7 +1750,7 @@ text-color {
 
 .karir .desc-box .desc {
     font-size: 14px;
-    color:#767E7E;
+    color: #767E7E;
     line-height: 26px;
     font-weight: 400;
 }

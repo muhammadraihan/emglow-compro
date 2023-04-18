@@ -7,15 +7,15 @@
 @section('content')
     <section class="about">
         <div class="header-section">
-            <div class="title">
-                Tentang eMGlow Aesthetics Centre
+                <div class="title">
+                    Tentang eMGlow Aesthetics Centre
+                </div>
+                @foreach ($about as $item)
+                    {{-- <p>No.telephone</p>
+                    <p>{{ $item->no_tlp }}</p>
+                    {{ asset('photo/' . $item->photo) }} --}}
+                @endforeach
             </div>
-            @foreach ($about as $item)
-                {{-- <p>No.telephone</p>
-                <p>{{ $item->no_tlp }}</p>
-                {{ asset('photo/' . $item->photo) }} --}}
-            @endforeach
-        </div>
         <div class="container">
             <div class="content-about mt-5">
                 <div class="row d-flex justify-content-center align-items-center">
@@ -29,10 +29,10 @@
                     </div>
                 </div>
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-5 mb-4">
                         <img src="/assets/dokmar-testi.png" alt="" class="w-100">
                     </div>
-                    <div class="col-12 col-md-5">
+                    <div class="col-12 col-md-5 history">
                         <h1>Sejarah</h1>
                         {!! $item->sejarah !!}
                     </div>

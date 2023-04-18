@@ -14,10 +14,10 @@
                 {{-- loop starts here --}}
                 @foreach ($cabang as $item)
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-8 text-center">
-                        <h1 class="mb-4">{{ $item->name }}</h1>
+                    <div class="col-12 col-md-6 text-center">
                         <img src="{{ asset('photo/' . $item->photo) }}" alt="" class="w-100 rounded">
                         <div class="details mt-4 mb-4">
+                            <h1>{{ $item->name }}</h1>
                             <div class="detail small text-muted mb-4">{{ $item->alamat }}</div>
                             <div class="alamat mb-2">{{ $item->detail }}</div>
                             <div class="contact">{{ $item->no_tlp }}</div>

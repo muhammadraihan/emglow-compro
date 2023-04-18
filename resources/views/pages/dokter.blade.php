@@ -19,7 +19,7 @@
                     </div>
 
                     @foreach ($dokter as $item)
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-4 col-sm-6">
                             <div class="team-member">
                                 <div class="team-img"
                                     style="background-image: url('{{ asset('photo/' . $item->photo) }}')">

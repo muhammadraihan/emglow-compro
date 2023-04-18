@@ -85,11 +85,10 @@
                 <div class="treatment">
                     <div class="container pb-4 mb-5">
                         <div class="d-flex justify-content-center row">
-                            <div class="col-md-10 treatment-card rounded-3 mb-4" data-aos="fade-up-right"
-                                data-aos-delay="100">
-                                <div class="row bg-white justify-content-center align-items-center py-3 px-1">
-
-                                    @foreach ($treatment as $item)
+                            @foreach ($treatment as $item)
+                                <div class="col-md-10 treatment-card rounded-3 mb-4" data-aos="fade-up-right"
+                                    data-aos-delay="100">
+                                    <div class="row bg-white justify-content-center align-items-center py-3 px-1">
                                         <div class="col-md-3 rounded-2">
                                             <img class="img-fluid img-responsive rounded product-image"
                                                 src="{{ asset('photo/' . $item->photo) }}" alt="Treatment">
@@ -110,14 +109,14 @@
                                                     @endif
                                                 </h4>
                                             </div>
-                                            <h6 class="text-success">#Garansi #HealthyGlowSkin</h6>
-                                            {{-- <div class="d-flex flex-column mt-4"><button
-                                                    class="btn btn-primary-emglow btn-sm" type="button">Book
-                                                    Now</button></div> --}}
+                                            <h6 class="text-success">#HealthyGlowSkin</h6>
+                                            <div class="d-flex flex-column mt-4"><button
+                                                    class="btn btn-primary-emglow btn-sm" type="button">Lihat
+                                                    Detail</button></div>
                                         </div>
-                                    @endforeach
+                                    </div>
                                 </div>
-                            </div>
+                            @endforeach
                         </div>
                         <div class="d-flex justify-content-center row">
                             <div class="col-12">
@@ -246,7 +245,7 @@
                     </div>
                     <div class="col-12 col-md-6" data-aos="fade-up-left">
                         <h4>
-                            New Treatment !!
+                            Treatment Baru eMGlow Aesthetic Centre
                         </h4>
                         <h1 class="title">{{ $item->name }}</h1>
                         <p class="desc">
@@ -254,8 +253,11 @@
                         </p>
             @endforeach
             @foreach ($about as $item)
-                <a href="{{ 'http://wa.me/' . $item->no_tlp }}" target="_blank" class="btn btn-primary-emglow">Booking
-                    Sekarang</a>
+                <div class="container-btn-cta">
+                    <a href="{{ 'http://wa.me/' . $item->no_tlp }}" target="_blank"
+                        class="btn btn-primary-emglow">Booking
+                        Sekarang</a>
+                </div>
             @endforeach
         </div>
         </div>

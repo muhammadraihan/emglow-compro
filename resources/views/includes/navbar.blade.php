@@ -20,10 +20,8 @@
                             href="{{ route('about') }}">Tentang Kami</a></li>
                     <li class="nav-item"><a class="nav-link {{ request()->is('treatment') ? 'active' : '' }}"
                             href="{{ route('treatment') }}">Treatment</a></li>
-                    {{-- <li class="nav-item"><a class="nav-link {{ request()->is('store') ? 'active' : '' }}"
-                            href="{{ route('store') }}">Store</a></li> --}}
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Store</a>
+                        <a href="#" class="nav-link dropdown-toggle {{ request()->is('produkAll' && 'produk') ? 'active' : '' }}" data-bs-toggle="dropdown">Store</a>
                         <div class="dropdown-menu bg-light m-0">
                             <a href="{{ route('produkAll') }}" class="dropdown-item">Semua</a>
                             @foreach ($kategori as $item)
