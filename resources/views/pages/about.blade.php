@@ -30,7 +30,7 @@
                 </div>
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-md-5 mb-4">
-                        <img src="/assets/dokmar-testi.png" alt="" class="w-100">
+                        <img src="/img/alat.png" alt="" class="w-100">
                     </div>
                     <div class="col-12 col-md-5 history">
                         <h1>Sejarah</h1>

@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
 
 :root {
-    --emglow-primary: #D855D7;
+    --emglow-primary: #DFA740;
     --emglow-secondary: #FAD1E1;
-    --emglow-black: #313131;
+    --emglow-black: #373536;
+    --emglow-gradient: #FFF5E3;
     --emglow-accent: #E15C19;
     --grey-color: #B2B7BE;
     --inter: 'Inter', sans-serif;
@@ -62,13 +63,22 @@ body {
     border-radius: 36px;
 }
 
+.btn-primary-emglow-dark {
+    background-color: var(--emglow-black);
+    padding: 0.375rem 1.25rem;
+    font-family: var(--poppins);
+    font-weight: 600;
+    color: #fff;
+    border-radius: 36px;
+}
+
 .btn-primary-emglow:hover {
     color: white !important;
 }
 
 .hero-emglow {
     min-height: 280px;
-    background: linear-gradient(90deg, #FEF3F7 0%, rgba(220, 100, 216, 0) 100%);
+    background: linear-gradient(90deg, #FFF5E3 0%, rgba(220, 100, 216, 0) 100%);
 }
 
 .hero-emglow h1 {
@@ -76,10 +86,7 @@ body {
     line-height: 64px;
     font-family: var(--poppins);
     font-weight: 600;
-    color: var(--emglow-black);
-    background: linear-gradient(96.46deg, #D855D7 3.72%, #D855D7 31.05%, #793C97 68.54%, #010420 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--emglow-primary);
 }
 
 .hero-emglow h4 {
@@ -103,9 +110,9 @@ body {
 }
 
 .btn-emglow-dark {
-    background-color: #231A36;
+    background-color: var(--emglow-black);
     color: #fff;
-    font-family: var(--inter);
+    font-family: var(--poppins);
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
@@ -169,8 +176,8 @@ body {
 
 .youtube-emglow {
     margin: 120px 0;
-    background-color: #FFDEE9;
-    background-image: linear-gradient(0deg, #FFDEE9 0%, #ffffff 100%);
+    background-color: var(--emglow-gradient);
+    background-image: linear-gradient(0deg, var(--emglow-gradient) 0%, #ffffff 100%);
     padding: 64px 0;
 }
 
@@ -205,7 +212,7 @@ body {
 .features-emglow {
     margin: 100px 0;
     min-height: 100px;
-    background: #231A36;
+    background: var(--emglow-black);
     background-size: cover;
 }
 
@@ -213,7 +220,7 @@ body {
     font-size: 40px;
     font-weight: 600;
     line-height: 52px;
-    color: white;
+    color: var(--emglow-primary);
     font-family: var(--poppins);
 }
 
@@ -285,7 +292,7 @@ body {
 .divider {
     height: 4px;
     margin: 48px 0;
-    background-color: var(--emglow-secondary);
+    background-color: var(--emglow-primary);
 }
 
 .treatment-list .desc {
@@ -576,7 +583,7 @@ body {
 }
 
 .featured-treatment {
-    background: #F4ECE9;
+    background: var(--emglow-gradient);
 }
 
 .featured-treatment .desc {
@@ -677,6 +684,7 @@ body {
     max-height: 100%;
     background-color: #F4ECE9;
     padding-top: 2rem;
+    margin-bottom: 120px;
 }
 
 .booking .copy-customer {
@@ -965,7 +973,7 @@ footer ul li {
     font-family: var(--poppins);
     font-weight: 600;
     width: auto;
-    background: var(--emglow-secondary);
+    background: var(--emglow-gradient);
     padding: 9px 35px;
     border-radius: 16px;
     text-align: center;
@@ -1040,8 +1048,8 @@ Promos Style
 
 .promos {
     margin: 120px 0;
-    background-color: #f2d8ff;
-    background-image: linear-gradient(0deg, #f2d8ff 0%, #ffffff 100%);
+    background-color: #FFF5E3;
+    background-image: linear-gradient(0deg, #FFF5E3 0%, #ffffff 100%);
 }
 
 .promos .content-container {
@@ -1728,10 +1736,14 @@ text-color {
 }
 
 .karir .header-section {
-    background-image: url('/../assets/bg-karir.jpeg');
+    background-image: url('/../img/header-karir.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.karir .header-section .padding-karir {
+    padding: 48px 0;
 }
 
 .karir .title {
@@ -1753,4 +1765,18 @@ text-color {
     color: #767E7E;
     line-height: 26px;
     font-weight: 400;
+}
+
+/* BTN */
+.btn-outline-primary-emglow {
+    border-color: var(--emglow-primary);
+    color: var(--emglow-primary);
+    font-family: var(--poppins);
+    font-weight: 600;
+}
+
+.btn-outline-primary-emglow:hover {
+    background-color: var(--emglow-primary);
+    color: var(--emglow-black);
+    border-color: var(--emglow-primary);
 }

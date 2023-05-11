@@ -24,7 +24,7 @@
                 Daftar Reseller eMGlow Aesthetics Centre
             </div>
             <div class="row">
-                <div class="col-6 col-md-4 col-lg-6">
+                <div class="col-12 col-md-4 col-lg-6">
                     @foreach ($reseller as $item)
                         <div class="img-reseller">
                             <img src="{{ asset('photo/' . $item->photo) }}" alt="Foto" class="w-100">

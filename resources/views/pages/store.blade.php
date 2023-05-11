@@ -8,6 +8,22 @@
     <section class="store mb-5">
         <div class="header-section">
             <div class="title">Product</div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-6 justify-content-center">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="image">
+                                <img src="/img/BPOM.png" alt="BPOM" class="w-50">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="image">
+                                <img src="/img/label-halal.png" alt="Halal" class="w-50">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="container-fluid mt-5 mb-5">
             <div class="row g-2">
@@ -25,7 +41,7 @@
                                         <h5>{{ $item->name }}</h5>
                                     </div>
                                     <a href="{{ $item->link }}">
-                                        <button class="btn btn-outline-primary w-100">Lihat
+                                        <button class="btn btn-outline-primary btn-outline-primary-emglow w-100">Lihat
                                             Detail</button>
                                     </a>
                                 </div>

@@ -19,7 +19,7 @@
                                     src="/assets/arrow-right.svg" alt="Arrow"></a>
                         </div>
                         <div class="col-12 col-md-6 img-hero">
-                            <img src="/assets/hero_dokmar_2.png" alt="Marlina" class="w-100" data-aos="fade-up">
+                            <img src="/img/dokmar-hero-new.png" alt="Marlina" class="w-100" data-aos="fade-up">
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@
                                             <h5>{{ $item->name }}</h5>
                                         </div>
                                         <a href="{{ $item->link }}">
-                                            <button class="btn btn-outline-primary w-100">Lihat
+                                            <button class="btn btn-outline-primary btn-outline-primary-emglow w-100">Lihat
                                                 Detail</button>
                                         </a>
                                     </div>
@@ -255,7 +255,7 @@
             @foreach ($about as $item)
                 <div class="container-btn-cta">
                     <a href="{{ 'http://wa.me/' . $item->no_tlp }}" target="_blank"
-                        class="btn btn-primary-emglow">Booking
+                        class="btn btn-primary-emglow-dark">Booking
                         Sekarang</a>
                 </div>
             @endforeach
@@ -300,8 +300,8 @@
     {{-- Youtube --}}
     <section class="youtube-emglow">
         <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-4" data-aos="fade-right" data-aos-duration="1000">
+            <div class="row align-items-center justify-content-center d-flex">
+                <div class="col-12 col-md-5" data-aos="fade-right" data-aos-duration="1000">
                     @foreach ($youtube as $item)
                         <div class="h4">
                             {{ $item->name }}
@@ -310,8 +310,8 @@
                             {{ $item->detail }}
                         </p>
                 </div>
-                <div class="col-12 col-md-8" data-aos="fade-left" data-aos-duration="1200">
-                    <iframe width="699" height="393" src="https://www.youtube.com/embed/{{ $item->link }}"
+                <div class="col-12 col-md-7" data-aos="fade-left" data-aos-duration="1200">
+                    <iframe width="600" height="400" src="https://www.youtube.com/embed/{{ $item->link }}"
                         title="Dengar Kata Dokter - Episode 1 | eMGlow Aesthetic Centre by dr. Marlina" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -326,7 +326,7 @@
 
     {{-- Education --}}
     <!-- Book -->
-    <section class="booking" data-aos="fade-up">
+    {{-- <section class="booking" data-aos="fade-up">
         <div class="container">
             <div class="content">
                 <div class="row d-flex justify-content-center">
@@ -349,12 +349,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End -->
     {{-- Education End --}}
 
     <!-- Komitmen -->
-    <section class="commitment">
+    {{-- <section class="commitment">
         <div class="container">
             <div class="row align-items-center d-flex" data-aos="fade-up">
                 <div class="col-2 col-md-2">
@@ -383,7 +383,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
     <!-- End -->
 
     {{-- Testimonial --}}

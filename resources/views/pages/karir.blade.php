@@ -7,9 +7,7 @@
 @section('content')
     <section class="karir">
         <div class="header-section">
-            <div class="title">
-                Ingin bergabung menjadi eMGlowers?
-            </div>
+            <div class="padding-karir"></div>
             {{-- <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia ut minus!</p> --}}
         </div>
         <div class="container">
@@ -18,7 +16,7 @@
             </div>
             <div class="row">
                 @foreach ($karir as $item)
-                    <div class="col-6 col-md-4 col-lg-6">
+                    <div class="col-12 col-md-4 col-lg-6">
                         <div class="img-reseller">
                             <img src="{{ asset('photo/' . $item->photo) }}" alt="Foto" class="w-100">
                         </div>
