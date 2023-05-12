@@ -1711,8 +1711,14 @@ text-color {
     line-height: 48px;
 }
 
+.reseller .img-reseller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 .reseller .img-reseller img {
-    height: 220px;
+    height: 400px;
     object-fit: cover;
 }
 

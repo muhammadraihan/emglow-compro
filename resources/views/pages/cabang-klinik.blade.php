@@ -20,7 +20,9 @@
                             <h1>{{ $item->name }}</h1>
                             <div class="detail small text-muted mb-4">{{ $item->alamat }}</div>
                             <div class="alamat mb-2">{{ $item->detail }}</div>
-                            <div class="contact">{{ $item->no_tlp }}</div>
+                            <div class="contact">
+                                <a href="{{ 'https://wa.me/'.$item->no_tlp }}" class="btn btn-outline-emglow">Hubungi Kami</a>
+                            </div>
                         </div>
                     </div>
                 </div>

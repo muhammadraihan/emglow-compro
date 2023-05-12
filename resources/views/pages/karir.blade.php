@@ -17,9 +17,9 @@
             <div class="row">
                 @foreach ($karir as $item)
                     <div class="col-12 col-md-4 col-lg-6">
-                        <div class="img-reseller">
+                        {{-- <div class="img-reseller">
                             <img src="{{ asset('photo/' . $item->photo) }}" alt="Foto" class="w-100">
-                        </div>
+                        </div> --}}
                         <div class="mt-3 desc-box">
                             <div class="h3">{{ $item->name }}</div>
                             <p class="desc">{!! $item->deskripsi !!}</p>

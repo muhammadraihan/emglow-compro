@@ -16,7 +16,7 @@
                                 <img src="/img/BPOM.png" alt="BPOM" class="w-50">
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-4">
                             <div class="image">
                                 <img src="/img/label-halal.png" alt="Halal" class="w-50">
                             </div>

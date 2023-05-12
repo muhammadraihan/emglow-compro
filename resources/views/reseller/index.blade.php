@@ -23,14 +23,10 @@
                     Reseller  <span class="fw-300"><i>List</i></span>
                 </h2>
                 <div class="panel-toolbar">
-                    @if ($data_reseller == 0)
                     <a class="nav-link active" href="{{route('reseller.create')}}"><i class="fal fa-plus-circle">
                         </i>
                         <span class="nav-link-text">Add New</span>
                     </a>
-                    @else
-                    
-                    @endif
                     <button class="btn btn-panel" data-action="panel-fullscreen" data-toggle="tooltip"
                         data-offset="0,10" data-original-title="Fullscreen"></button>
                 </div>
@@ -45,7 +41,7 @@
                 <th>Wilayah Reseller</th>
                 <th>Deskripsi</th>
                 <th>No. Telephone</th>
-                <th>Photo</th>
+                {{-- <th>Photo</th> --}}
                 <th width="120px">Action</th>
                 </tr>
                         </thead>
@@ -114,7 +110,7 @@
             {data: 'wilayah_reseller', name: 'wilayah_reseller'},
             {data: 'deskripsi', name: 'deskripsi'},
             {data: 'telephone', name: 'telephone'},
-            {data: 'photo', name: 'photo'},
+            // {data: 'photo', name: 'photo'},
             {data: 'action', name: 'action', orderable: false, searchable: false},
         ]
     });

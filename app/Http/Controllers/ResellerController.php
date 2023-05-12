@@ -70,8 +70,7 @@ class ResellerController extends Controller
         $rules = [
             'wilayah_reseller' => 'required',
             'deskripsi' => 'required',
-            'telephone' => 'required',
-            'photo' => 'required|image|mimes:jpeg,png,jpg',
+            'telephone' => 'required'
         ];
 
         $messages = [
@@ -142,8 +141,7 @@ class ResellerController extends Controller
         $rules = [
             'wilayah_reseller' => 'required',
             'deskripsi' => 'required',
-            'telephone' => 'required',
-            'photo' => 'required|image|mimes:jpeg,png,jpg',
+            'telephone' => 'required'
         ];
 
         $messages = [

@@ -87,7 +87,12 @@ class CabangController extends Controller
         $cabang = new Cabang();
         $cabang->name = $request->name;
         $cabang->alamat = $request->alamat;
-        $cabang->no_tlp = $request->no_tlp;
+        $no_tlp = $request->no_tlp;
+        if (substr($no_tlp, 0, 1) === "0") {
+            $no_tlp = "62" . substr($no_tlp, 1);
+        }
+
+        $cabang->no_tlp = $no_tlp;
         $cabang->detail = $request->detail;
         $cabang->photo = $request->photo;
 
@@ -155,7 +160,12 @@ class CabangController extends Controller
         $cabang = Cabang::uuid($id);
         $cabang->name = $request->name;
         $cabang->alamat = $request->alamat;
-        $cabang->no_tlp = $request->no_tlp;
+        $no_tlp = $request->no_tlp;
+        if (substr($no_tlp, 0, 1) === "0") {
+            $no_tlp = "62" . substr($no_tlp, 1);
+        }
+
+        $cabang->no_tlp = $no_tlp;
         $cabang->detail = $request->detail;
 
         if($request->hasFile('photo')){

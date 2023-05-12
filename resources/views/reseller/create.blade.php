@@ -40,9 +40,9 @@
                     @endif
                     {!! Form::open(['route' => 'reseller.store','id'=>'forms','method' => 'POST','class' =>
                     'needs-validation','dropzone', 'forms','novalidate','enctype' => 'multipart/form-data']) !!}
-                    <div class="form-group col-md-15 mb-6">
+                    <div class="form-group col-md-4 mb-3">
                         {{ Form::label('wilayah_reseller','Wilayah Reseller',['class' => 'required form-label'])}}
-                        {{ Form::textarea('wilayah_reseller',null,['placeholder' => 'Wilayah Reseller','class' => 'wilayah_reseller form-control '.($errors->has('wilayah_reseller') ? 'is-invalid':''),'required', 'autocomplete' => 'off'])}}
+                        {{ Form::text('wilayah_reseller',null,['placeholder' => 'Wilayah Reseller','class' => 'wilayah_reseller form-control '.($errors->has('wilayah_reseller') ? 'is-invalid':''),'required', 'autocomplete' => 'off'])}}
                         @if ($errors->has('wilayah_reseller'))
                         <div class="invalid-feedback">{{ $errors->first('wilayah_reseller') }}</div>
                         @endif
@@ -61,7 +61,7 @@
                         <div class="invalid-feedback">{{ $errors->first('telephone') }}</div>
                         @endif
                     </div>
-                    <div class="form-group col-md-4 mb-3">
+                    {{-- <div class="form-group col-md-4 mb-3">
                         {{ Form::label('photo','Photo',['class' => 'required form-label'])}}
                         {{ Form::file('photo',null,['placeholder' => 'Photo','class' => 'form-control upload '.($errors->has('photo') ? 'is-invalid':''),'required', 'autocomplete' => 'off', 'id' => 'photo'])}}
                         <img id="preview-image-before-upload" src="https://www.riobeauty.co.uk/images/product_image_not_found.gif"
@@ -69,7 +69,7 @@
                         @if ($errors->has('photo'))
                         <div class="invalid-feedback">{{ $errors->first('photo') }}</div>
                         @endif
-                    </div>
+                    </div> --}}
                 <div
                     class="panel-content border-faded border-left-0 border-right-0 border-bottom-0 d-flex flex-row align-items-center">
                     <button class="btn btn-primary ml-auto" type="submit">Submit</button>
@@ -110,7 +110,7 @@
             clearBtn: true,
         });
 
-        CKEDITOR.replace('wilayah_reseller');
+        // CKEDITOR.replace('wilayah_reseller');
         CKEDITOR.replace('deskripsi');
 
         $('.tgl_akhir').datepicker({
