@@ -8,22 +8,28 @@
     <section class="karir">
         <div class="header-section">
             <div class="padding-karir"></div>
-            {{-- <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia ut minus!</p> --}}
         </div>
         <div class="container">
             <div class="my-5 text-center title">
                 Job Vacancy di eMGlow Aesthetic Centre
             </div>
-            <div class="row">
+            <div class="row job-vacancy">
                 @foreach ($karir as $item)
-                    <div class="col-12 col-md-4 col-lg-6">
-                        {{-- <div class="img-reseller">
-                            <img src="{{ asset('photo/' . $item->photo) }}" alt="Foto" class="w-100">
-                        </div> --}}
-                        <div class="mt-3 desc-box">
+                    <div class="col-6 col-md-6 col-lg-3">
+                        {{-- <div class="mt-3 desc-box">
                             <div class="h3">{{ $item->name }}</div>
                             <p class="desc">{!! $item->deskripsi !!}</p>
-                            <a href="{{ 'https://'.$item->link }}" class="btn btn-primary-emglow">Apply Sekarang</a>
+                            <a href="{{ 'https://' . $item->link }}" class="btn btn-primary-emglow">Apply Sekarang</a>
+                        </div> --}}
+                        <div class="card rounded">
+                            <img src="/img/wba_logo_old2.png" class="card-img-top p-4" alt="logo">
+                            <div class="card-body text-center">
+                                <div class="mb-4">
+                                    <h5 class="card-title">{{ $item->name }}</h5>
+                                <p class="text-muted">Bekasi</p>
+                                </div>
+                                <a href="{{ 'https://' . $item->link }}" class="btn btn-primary-emglow w-100">Apply Sekarang</a>
+                            </div>
                         </div>
                     </div>
                 @endforeach

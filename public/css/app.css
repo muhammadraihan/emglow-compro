@@ -1715,7 +1715,7 @@ text-color {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
 .reseller .img-reseller img {
     height: 400px;
@@ -1785,4 +1785,19 @@ text-color {
     background-color: var(--emglow-primary);
     color: var(--emglow-black);
     border-color: var(--emglow-primary);
+}
+
+.job-vacancy .card .card-title {
+    font-family: var(--bai);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--emglow-black);
+}
+
+.reseller .card .card-title {
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--bai);
+    font-weight: 600;
+    color: var(--emglow-black);
 }
