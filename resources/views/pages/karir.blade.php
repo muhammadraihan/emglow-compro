@@ -26,8 +26,11 @@
                             <div class="card-body text-center">
                                 <div class="mb-4">
                                     <h5 class="card-title">{{ $item->name }}</h5>
-                                <p class="text-muted">Bekasi</p>
                                 </div>
+                            </div>
+
+                            <p class="text-muted">{!! $item->deskripsi !!}</p>
+                            <div class="card-body text-center">
                                 <a href="{{ 'https://' . $item->link }}" class="btn btn-primary-emglow w-100">Apply Sekarang</a>
                             </div>
                         </div>

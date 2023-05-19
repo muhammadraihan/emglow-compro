@@ -12,9 +12,10 @@
                 <div class="content-hero">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-12 col-md-6 title-hero" data-aos="fade-up">
-                            <h1>eMGlow Aesthetic Centre</h1>
+                            {{-- <h1>eMGlow Aesthetic Centre</h1>
                             <h4>by Dr Marlina</h4>
-                            <p class="tagline">#HealthyGlowSkin</p>
+                            <p class="tagline">#HealthyGlowSkin</p> --}}
+                            <img src="assets/logo-old.png" alt="Logo" class="w-50">
                             <a href="#" class="btn btn-emglow-dark mt-2">Temukan perawatan untukmu <img
                                     src="/assets/arrow-right.svg" alt="Arrow"></a>
                         </div>
