@@ -15,6 +15,7 @@
 
 html {
     width: 100%;
+    background-color: var(--emglow-black);
 }
 
 body {
@@ -22,10 +23,12 @@ body {
     min-height: 75rem;
     padding-top: 4.5rem;
     letter-spacing: 1%;
+    color: #fff;
+    background-color: var(--emglow-black);
 }
 
 .navbar-emglow .nav-item .nav-link {
-    color: #313131 !important;
+    color: #fff !important;
     font-family: var(--poppins) !important;
     font-size: 14px;
 }
@@ -78,7 +81,8 @@ body {
 
 .hero-emglow {
     min-height: 280px;
-    background: linear-gradient(90deg, #FFF5E3 0%, rgba(220, 100, 216, 0) 100%);
+    /* background: linear-gradient(90deg, #FFF5E3 0%, rgba(220, 100, 216, 0) 100%); */
+    background-color: #fff;
 }
 
 .hero-emglow h1 {
@@ -145,6 +149,14 @@ body {
     line-height: 60px;
     font-family: var(--bai);
     font-weight: 700;
+}
+
+.awards-emglow .card-body p {
+    color: var(--emglow-black);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .awards-emglow .title-section .h2 img {
@@ -250,7 +262,7 @@ body {
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
-    font-family: var(--poppins);
+    font-family: var(--bai);
     /* or 133% */
 
     text-align: center;
@@ -258,7 +270,7 @@ body {
 
     /* Black/General */
 
-    color: #252525;
+    color: #fff;
 
 }
 
@@ -272,7 +284,7 @@ body {
 
     text-align: center;
 
-    color: #767E7E;
+    color: #fff;
 
 }
 
@@ -292,7 +304,7 @@ body {
 .divider {
     height: 4px;
     margin: 48px 0;
-    background-color: var(--emglow-primary);
+    background-color: var(--emglow-black);
 }
 
 .treatment-list .desc {
@@ -360,10 +372,10 @@ body {
 
 .animate-charcter {
     background-image: linear-gradient(-225deg,
-            #231557 0%,
-            #44107a 29%,
-            #ff1361 67%,
-            #fff800 100%);
+            #373536 0%,
+            #E15C19 29%,
+            #FFF5E3 67%,
+            #DFA740 100%);
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
@@ -445,15 +457,15 @@ body {
 
 .section-products .header h3 {
     font-size: 1rem;
-    color: #fe302f;
-    font-weight: 500;
+    color: var(--emglow-primary);
+    font-weight: 800;
     font-family: var(--inter);
 }
 
 .section-products .header h2 {
     font-size: 2.2rem;
-    font-weight: 600;
-    color: #444444;
+    font-weight: 700;
+    color: #fff;
     font-family: var(--poppins);
 }
 
@@ -594,7 +606,7 @@ body {
 }
 
 .featured-treatment h4 {
-    color: #414449;
+    color: var(--emglow-primary);
     font-size: 18px;
     line-height: 30px;
     font-family: var(--poppins);
@@ -610,7 +622,7 @@ body {
 }
 
 .featured-treatment p {
-    color: #727272;
+    color: var(--emglow-black);
     font-size: 16px;
     line-height: 28px;
     font-family: var(--inter);
@@ -741,7 +753,7 @@ body {
 
 .emglow-footer .h1 {
     font-size: 36px;
-    color: var(--emglow-primary);
+    color: var(--emglow-black);
     font-weight: 700;
     font-family: var(--bai);
     line-height: 48px;
@@ -764,23 +776,45 @@ a:focus {
 }
 
 .form-control:focus {
-    background: #212529;
+    background: #fff;
 }
 
 footer {
-    background: whitesmoke;
+    background: var(--emglow-primary);
 }
 
 .emglow-footer h5 {
     font-family: var(--poppins);
+    color: var(--emglow-black);
+}
+
+.emglow-footer .address {
+    color: var(--emglow-black);
 }
 
 footer .copyright p {
     margin: 0;
 }
 
+footer .subscribe {
+    color: var(--emglow-black) !important;
+}
+
+.color-black {
+    color: var(--emglow-black) !important;
+}
+
+.color-white {
+    color: #fff !important;
+}
+
+.color-gold {
+    color: var(--emglow-primary) !important;
+}
+
 footer ul li {
     margin-bottom: 12px;
+    color: #252525;
 }
 
 /* RESPONSIVE SIDE */
@@ -935,9 +969,9 @@ footer ul li {
 .testimonials .subtitle {
     font-family: var(--inter);
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 800;
     line-height: 28px;
-    color: var(--emglow-accent);
+    color: var(--emglow-primary);
     text-transform: uppercase;
 }
 
@@ -946,7 +980,7 @@ footer ul li {
     font-weight: 600;
     font-family: var(--poppins);
     line-height: 60px;
-    color: #252525;
+    color: #fff;
 }
 
 .shadow-effect {
@@ -1048,8 +1082,8 @@ Promos Style
 
 .promos {
     margin: 120px 0;
-    background-color: #FFF5E3;
-    background-image: linear-gradient(0deg, #FFF5E3 0%, #ffffff 100%);
+    /* background-color: #FFF5E3;
+    background-image: linear-gradient(0deg, #FFF5E3 0%, #ffffff 100%); */
 }
 
 .promos .content-container {
@@ -1072,7 +1106,7 @@ Promos Style
 }
 
 .promos .subtitle-promos {
-    color: var(--emglow-black);
+    color: #fff;
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 1%;

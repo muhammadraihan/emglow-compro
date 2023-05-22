@@ -7,7 +7,7 @@
 @section('content')
     <section class="cabang-klinik">
         <div class="header-section">
-            <div class="title">Cabang Klinik</div>
+            <div class="title color-white">Cabang Klinik</div>
         </div>
         <div class="container mt-5">
             <div class="content-cabang">
@@ -17,11 +17,11 @@
                     <div class="col-12 col-md-6 text-center">
                         <img src="{{ asset('photo/' . $item->photo) }}" alt="" class="w-100 rounded">
                         <div class="details mt-4 mb-4">
-                            <h1>{{ $item->name }}</h1>
-                            <div class="detail small text-muted mb-4">{{ $item->alamat }}</div>
-                            <div class="alamat mb-2">{{ $item->detail }}</div>
+                            <h1 class="color-gold">{{ $item->name }}</h1>
+                            <div class="detail small text-muted mb-4 color-white">{{ $item->alamat }}</div>
+                            <div class="alamat mb-2 color-white">{{ $item->detail }}</div>
                             <div class="contact">
-                                <a href="{{ 'https://wa.me/'.$item->no_tlp }}" class="btn btn-outline-emglow">Hubungi Kami</a>
+                                <a href="{{ 'https://wa.me/'.$item->no_tlp }}" class="btn btn-primary-emglow">Hubungi Kami</a>
                             </div>
                         </div>
                     </div>

@@ -13,9 +13,8 @@
             <div class="content-dokter">
                 <div class="row">
                     <div class="heading-title text-center">
-                        <h3 class="text-uppercase">Dokter Kami</h3>
-                        <p class="p-top-30 half-txt">Nam pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. Nam
-                            pulvinar vitae neque et porttitor. Praesent sed nisi eleifend. </p>
+                        <h3 class="text-uppercase color-white">Dokter Kami</h3>
+                        <p class="p-top-30 half-txt color-white">Dokter dari eMGlow Aesthetic Centre merupakan dokter kecantikan yang berpengalaman dan terbaik.</p>
                     </div>
 
                     @foreach ($dokter as $item)
@@ -26,10 +25,10 @@
                                 </div>
                             </div>
                             <div class="team-title">
-                                <h5 class="mb-2">{{ $item->name }}</h5>
-                                <div class="subtitle text-uppercase">{{ $item->Cabang->name }}</div>
-                                <div class="subtitle">{!! $item->jadwal !!}</div>
-                                <div class="subtitle mt-4 text-dark">{!! $item->deskripsi !!}</div>
+                                <h5 class="mb-2 color-gold">{{ $item->name }}</h5>
+                                <div class="subtitle text-uppercase color-white">{{ $item->Cabang->name }}</div>
+                                <div class="subtitle color-white">{!! $item->jadwal !!}</div>
+                                <div class="subtitle mt-4 color-white">{!! $item->deskripsi !!}</div>
                             </div>
                         </div>
                     @endforeach

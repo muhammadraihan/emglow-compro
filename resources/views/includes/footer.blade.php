@@ -3,11 +3,10 @@
         <div class="row gy-4 gx-5">
             <div class="col-lg-6 col-md-6">
                 <h5 class="h1">CV. Tiga Cahaya</h5>
-                <p class="small text-muted text-capitalize">Cluster Festive Garden Grand Wisata Blok AG 1 No. 15
+                <p class="small text-capitalize address">Cluster Festive Garden Grand Wisata Blok AG 1 No. 15
                     Lambangsari, Tambun
                     Selatan Kab. Bekasi. Jawa Barat. 17510.</p>
-                <div class="small mb-3">Licensed by:</div>
-                <div class="row d-flex align-items-center">
+                <div class="row d-flex align-items-center mt-2">
                     <div class="col-3 col-md-3">
                         <img src="/img/BPOM.png" alt="BPOM" class="w-75">
                     </div>
@@ -28,7 +27,7 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <h5 class="mb-3">Berlangganan</h5>
-                <p class="small text-muted mb-4">Dapatkan informasi dan promo dari eMGlow Aesthetic Centre dengan selalu
+                <p class="small text-muted mb-4 subscribe">Dapatkan informasi dan promo dari eMGlow Aesthetic Centre dengan selalu
                     berlangganan newsletter kami.</p>
                 <form action="#">
                     <div class="input-group mb-3">
@@ -46,12 +45,12 @@
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 color-black">
                 <div class="small">Ikuti Media Sosial eMGlow Aesthetic Centre:</div>
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 color-black">
                 <a href="/" class="sosmed-icon">Instagram</a>
                 <a href="/" class="sosmed-icon">Instagram</a>
                 <a href="/" class="sosmed-icon">Instagram</a>

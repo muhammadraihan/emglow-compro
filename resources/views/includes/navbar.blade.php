@@ -1,5 +1,5 @@
 <section class="navbar-emglow">
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/assets/logo.png" class="img-responsive" alt="Logo" srcset="">

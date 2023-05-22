@@ -19,8 +19,8 @@
                             </div>
                             <div class="col-md-7">
                                 <div class="main-description px-2">
-                                    <div class="category text-bold">
-                                        Category: Pemutih
+                                    <div class="category text-bold color-gold">
+                                        Category:
                                     </div>
                                     <div class="product-title text-bold my-3">
                                         {{ $item->name }}
@@ -36,12 +36,12 @@
                                 </div>
                                 <div class="product-details my-4">
                                     <p class="details-title text-color mb-1">Deskripsi</p>
-                                    <p class="description">
+                                    <p class="description color-white">
                                         {{ $item->deskripsi }}
                                     </p>
                                 </div>
 
-                                <div class="row questions bg-light p-3">
+                                <div class="row questions bg-dark p-3">
                                     <div class="col-md-1 icon">
                                         <i class="fa-brands fa-rocketchat questions-icon"></i>
                                     </div>

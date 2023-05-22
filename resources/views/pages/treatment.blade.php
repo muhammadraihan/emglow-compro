@@ -7,7 +7,7 @@
 @section('content')
     <section class="emglow-treatment">
         <div class="header-section">
-            <div class="title">Treatment</div>
+            <div class="title color-white">Treatment</div>
         </div>
         <div class="container mt-5">
             <div class="container similar-products my-4">
@@ -16,9 +16,9 @@
                         <div class="col-12 col-md-4 col-lg-6">
                             <div class="similar-product">
                                 <img class="w-100" src="{{ asset('photo/' . $item->photo) }}" alt="Preview">
-                                <p class="title">{{ $item->name }}</p>
-                                <div class="text-muted mb-4">{!! $item->deskripsi !!}</div>
-                                <a href="{{ route('treatment-detail', $item->uuid)}}" class="btn btn-outline-emglow">Lihat Detail</a>
+                                <p class="title color-gold">{{ $item->name }}</p>
+                                <div class="text-muted mb-4 color-white">{!! $item->deskripsi !!}</div>
+                                <a href="{{ route('treatment-detail', $item->uuid)}}" class="btn btn-primary-emglow">Lihat Detail</a>
                             </div>
                         </div>
                     @endforeach

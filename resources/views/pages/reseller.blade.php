@@ -7,7 +7,7 @@
 @section('content')
     <section class="reseller">
         <div class="header-section">
-            <div class="title">
+            <div class="title color-white">
                 Tertarik Menjadi Reseller eMGlow?
             </div>
             {{-- <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia ut minus!</p> --}}
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="container">
-            <div class="my-5 text-center title">
+            <div class="my-5 text-center title color-white">
                 Daftar Reseller eMGlow Aesthetics Centre
             </div>
             <div class="row">

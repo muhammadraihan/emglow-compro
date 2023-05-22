@@ -7,7 +7,7 @@
 @section('content')
     <section class="store mb-5">
         <div class="header-section">
-            <div class="title">Product</div>
+            <div class="title color-white">Product</div>
             <div class="row justify-content-center align-items-center">
                 <div class="col-12 col-md-6 justify-content-center">
                     <div class="row">

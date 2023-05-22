@@ -11,11 +11,8 @@
             <div class="container">
                 <div class="content-hero">
                     <div class="row justify-content-center align-items-center">
-                        <div class="col-12 col-md-6 title-hero" data-aos="fade-up">
-                            {{-- <h1>eMGlow Aesthetic Centre</h1>
-                            <h4>by Dr Marlina</h4>
-                            <p class="tagline">#HealthyGlowSkin</p> --}}
-                            <img src="assets/logo-old.png" alt="Logo" class="w-50">
+                        <div class="col-12 col-md-6 title-hero text-center" data-aos="fade-up">
+                            <img src="assets/logo-old.png" alt="Logo" class="w-75">
                             <a href="#" class="btn btn-emglow-dark mt-2">Temukan perawatan untukmu <img
                                     src="/assets/arrow-right.svg" alt="Arrow"></a>
                         </div>
@@ -65,10 +62,14 @@
     <!-- Products -->
     <section class="products-emglow">
         <div class="container">
-            <div class="title" data-aos="fade-up">
-                <h1>Solusi Perawatan Kulit Wajah Cerah & Bersinar</h1>
-                <p>Cerahkan wajahmu dan sinari aktivitasmu dengan menemukan solusi perawatan kulit wajah yang tepat
-                    untukmu.</p>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <div class="title" data-aos="fade-up">
+                        <h1>Solusi Perawatan Kulit Wajah Cerah & Bersinar</h1>
+                        <p>Cerahkan wajahmu dan sinari aktivitasmu dengan menemukan solusi perawatan kulit wajah yang tepat
+                            untukmu.</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Treatment -->
@@ -110,7 +111,7 @@
                                                     @endif
                                                 </h4>
                                             </div>
-                                            <h6 class="text-success">#HealthyGlowSkin</h6>
+                                            {{-- <h6 class="text-success">#HealthyGlowSkin</h6> --}}
                                             <div class="d-flex flex-column mt-4"><button
                                                     class="btn btn-primary-emglow btn-sm" type="button">Lihat
                                                     Detail</button></div>
