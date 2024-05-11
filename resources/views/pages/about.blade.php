@@ -7,14 +7,9 @@
 @section('content')
     <section class="about">
         <div class="header-section">
-                <div class="title color-white">
+                <h1 class="text-white fw-bold">
                     Tentang eMGlow Aesthetics Centre
-                </div>
-                @foreach ($about as $item)
-                    {{-- <p>No.telephone</p>
-                    <p>{{ $item->no_tlp }}</p>
-                    {{ asset('photo/' . $item->photo) }} --}}
-                @endforeach
+                </h1>
             </div>
         <div class="container">
             <div class="content-about mt-5">

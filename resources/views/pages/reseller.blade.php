@@ -7,21 +7,12 @@
 @section('content')
     <section class="reseller">
         <div class="header-section">
-            <div class="title color-white">
-                Tertarik Menjadi Reseller eMGlow?
-            </div>
-            {{-- <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia ut minus!</p> --}}
-        </div>
-        <div class="row justify-content-center my-4">
-            <div class="col-6 col-md-4">
-                <a href="{{ 'https://wa.me/6281265812921' }}" class="btn btn-primary-emglow w-100">Join Reseller</a>
-            </div>
+            <h1 class="text-white fw-bold">
+                Daftar Reseller eMGlow Aesthetics Centre
+            </h1>
         </div>
         <div class="container">
-            <div class="my-5 text-center title color-white">
-                Daftar Reseller eMGlow Aesthetics Centre
-            </div>
-            <div class="row">
+            <div class="row mt-5">
                 @foreach ($reseller as $item)
                     <div class="col-12 col-md-4 col-lg-3">
                         <div class="card rounded">
@@ -41,6 +32,11 @@
                         </div>
                     </div>
                 @endforeach
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-6 col-md-4">
+                    <a href="{{ 'https://wa.me/6281265812921' }}" class="btn btn-primary-emglow w-100">Join Reseller</a>
+                </div>
             </div>
         </div>
     </section>

@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Poppins:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
-    --emglow-primary: #DFA740;
-    --emglow-secondary: #FAD1E1;
+    --emglow-primary: #dfa740;
+    --emglow-secondary: #fad1e1;
     --emglow-black: #373536;
-    --emglow-gradient: #FFF5E3;
-    --emglow-accent: #E15C19;
-    --grey-color: #B2B7BE;
-    --inter: 'Inter', sans-serif;
-    --poppins: 'Poppins', sans-serif;
-    --bai: 'Bai Jamjuree', sans-serif;
+    --emglow-gradient: #fff5e3;
+    --emglow-accent: #e15c19;
+    --grey-color: #b2b7be;
+    --manrope: "Manrope", sans-serif;
 }
 
 html {
@@ -19,7 +17,7 @@ html {
 }
 
 body {
-    font-family: var(--inter) !important;
+    font-family: var(--manrope) !important;
     min-height: 75rem;
     padding-top: 4.5rem;
     letter-spacing: 1%;
@@ -29,8 +27,9 @@ body {
 
 .navbar-emglow .nav-item .nav-link {
     color: #fff !important;
-    font-family: var(--poppins) !important;
+    font-family: var(--manrope) !important;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .navbar-emglow .nav-item {
@@ -43,8 +42,8 @@ body {
 
 .navbar-emglow .nav-item .nav-link.active {
     color: var(--emglow-primary) !important;
-    font-weight: 600;
-    font-family: var(--poppins) !important;
+    font-weight: 800;
+    font-family: var(--manrope) !important;
 }
 
 .navbar-emglow .navbar {
@@ -60,7 +59,7 @@ body {
 .btn-primary-emglow {
     background-color: var(--emglow-primary) !important;
     padding: 0.375rem 1.25rem;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 600;
     color: #fff;
     border-radius: 36px;
@@ -69,7 +68,7 @@ body {
 .btn-primary-emglow-dark {
     background-color: var(--emglow-black);
     padding: 0.375rem 1.25rem;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 600;
     color: #fff;
     border-radius: 36px;
@@ -80,23 +79,26 @@ body {
 }
 
 .hero-emglow {
-    min-height: 280px;
-    /* background: linear-gradient(90deg, #FFF5E3 0%, rgba(220, 100, 216, 0) 100%); */
-    background-color: #fff;
+    width: 100%;
+    height: 60vh;
+    background: url('../img/bg-overall.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-color: #fefefe;
 }
 
 .hero-emglow h1 {
-    font-size: 52px;
-    line-height: 64px;
-    font-family: var(--poppins);
-    font-weight: 600;
-    color: var(--emglow-primary);
+    font-size: 2.25rem;
+    line-height: 48px;
+    font-family: var(--manrope);
+    font-weight: 800;
+    color: var(--emglow-black);
 }
 
 .hero-emglow h4 {
     font-size: 24px;
     line-height: 35px;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     color: var(--emglow-black);
     font-weight: 600;
 }
@@ -110,29 +112,25 @@ body {
     line-height: 24px;
     color: var(--emglow-accent);
     font-weight: 600;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
 }
 
 .btn-emglow-dark {
-    background-color: var(--emglow-black);
+    background-color: var(--emglow-primary);
     color: #fff;
-    font-family: var(--poppins);
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 600;
-    padding: 0.75rem 2rem;
-    border-radius: 36px;
-    -webkit-transition-duration: 0.4s;
-    /* Safari */
-    transition-duration: 0.4s;
+    font-family: var(--manrope);
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 800;
+    padding: 0.75rem 2.75rem;
+    border-radius: 16px;
     text-decoration: none;
     overflow: hidden;
-    cursor: pointer;
+    cursor: pomanrope;
 }
 
 .btn-emglow-dark:hover {
-    color: #fff !important;
-    background-color: var(--emglow-black);
+    color: #fff;
 }
 
 .awards-emglow {
@@ -147,7 +145,7 @@ body {
     font-size: 48px;
     color: var(--emglow-primary);
     line-height: 60px;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-weight: 700;
 }
 
@@ -165,7 +163,7 @@ body {
 
 .awards-emglow .title-section .subtitle {
     font-size: 16px;
-    color: #B2B7BE;
+    color: #b2b7be;
     line-height: 28px;
     font-weight: 300;
 }
@@ -181,7 +179,7 @@ body {
 .awards-carousel .card-title {
     font-size: 24px;
     color: var(--emglow-black);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     line-height: 36px;
     font-weight: 600;
 }
@@ -189,13 +187,17 @@ body {
 .youtube-emglow {
     margin: 120px 0;
     background-color: var(--emglow-gradient);
-    background-image: linear-gradient(0deg, var(--emglow-gradient) 0%, #ffffff 100%);
+    background-image: linear-gradient(
+        0deg,
+        var(--emglow-gradient) 0%,
+        #ffffff 100%
+    );
     padding: 64px 0;
 }
 
 .youtube-emglow .h4 {
     font-size: 48px;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     color: var(--emglow-primary);
     font-weight: 700;
     line-height: 60px;
@@ -212,7 +214,7 @@ body {
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
-    color: #B2B7BE;
+    color: #b2b7be;
     line-height: 20px;
     letter-spacing: 1px;
 }
@@ -228,12 +230,12 @@ body {
     background-size: cover;
 }
 
-.content-features h1 {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 52px;
-    color: var(--emglow-primary);
-    font-family: var(--poppins);
+.content-features .title-section {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    color: #fff;
+    font-family: var(--manrope);
 }
 
 .content-features .statistics {
@@ -241,63 +243,57 @@ body {
 }
 
 .content-features .numbers {
-    font-weight: 600;
-    font-size: 40px;
-    font-family: var(--poppins);
-    line-height: 40px;
-    color: white;
+    font-weight: 800;
+    font-size: 36px;
+    font-family: var(--manrope);
+    line-height: 48px;
+    color: var(--emglow-primary);
+    margin-top: 24px;
 }
 
 .content-features .type {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
-    font-family: var(--inter);
+    font-family: var(--manrope);
     color: white;
-    margin-top: 12px;
+    margin-top: 16px;
+}
+
+.products-emglow {
+    padding: 6.25rem 0;
+    background-color: #fefefe;
+    background: url('../img/bg-overall.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 .products-emglow .title h1 {
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 48px;
     line-height: 60px;
-    font-family: var(--bai);
-    /* or 133% */
-
-    text-align: center;
-    letter-spacing: 0.01em;
-
-    /* Black/General */
-
-    color: #fff;
-
+    font-family: var(--manrope);
+    /* text-align: center; */
+    color: var(--emglow-black);
 }
 
 .products-emglow .title p {
-    font-weight: 400;
+    font-weight: 600;
     margin-top: 24px;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: var(--inter);
-    /* identical to box height, or 140% */
-
-    text-align: center;
-
-    color: #fff;
-
+    font-size: 20px;
+    line-height: 32px;
+    font-family: var(--manrope);
+    /* text-align: center; */
+    color: var(--emglow-black);
 }
 
 .treatment-list .title {
     font-weight: 600;
     font-size: 36px;
     line-height: 28px;
-    /* identical to box height, or 78% */
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     letter-spacing: 0.01em;
-
-    /* Black/General */
-
     color: #252525;
 }
 
@@ -314,9 +310,8 @@ body {
     line-height: 28px;
     /* or 140% */
     margin-top: 24px;
-    font-family: var(--inter);
-
-    color: #767E7E;
+    font-family: var(--manrope);
+    color: #767e7e;
 }
 
 .product-list .title {
@@ -324,7 +319,7 @@ body {
     font-size: 36px;
     line-height: 28px;
     /* identical to box height, or 78% */
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     letter-spacing: 0.01em;
 
     /* Black/General */
@@ -339,9 +334,9 @@ body {
     line-height: 28px;
     /* or 140% */
     margin-top: 24px;
-    font-family: var(--inter);
+    font-family: var(--manrope);
 
-    color: #767E7E;
+    color: #767e7e;
 }
 
 .strike-text {
@@ -356,31 +351,33 @@ body {
     font-weight: 600;
     font-size: 24px;
     color: var(--emglow-black);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
 }
 
 .treatment .text-success {
-    font-family: var(--inter);
+    font-family: var(--manrope);
 }
 
 .treatment .price-treatment {
     color: var(--emglow-accent);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-size: 22px;
     font-weight: 600;
 }
 
-.animate-charcter {
-    background-image: linear-gradient(-225deg,
-            #373536 0%,
-            #E15C19 29%,
-            #FFF5E3 67%,
-            #DFA740 100%);
+.animate-character {
+    background-image: linear-gradient(
+        -225deg,
+        #373536 0%,
+        #e15c19 29%,
+        #fff5e3 67%,
+        #dfa740 100%
+    );
     background-size: auto auto;
     background-clip: border-box;
     background-size: 200% auto;
     color: #fff;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     background-clip: text;
     text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -398,7 +395,7 @@ body {
 
 .para {
     font-size: 16px;
-    font-family: var(--inter);
+    font-family: var(--manrope);
     color: var(--emglow-black);
 }
 
@@ -409,7 +406,7 @@ body {
 .treatment .btn-outline-primary {
     border-color: var(--emglow-primary) !important;
     color: var(--emglow-primary) !important;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 600;
 }
 
@@ -428,7 +425,7 @@ body {
 .section-products .btn-outline-primary {
     border-color: var(--emglow-primary) !important;
     color: var(--emglow-primary) !important;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
 }
 
 .treatment .btn-outline-primary:hover {
@@ -442,31 +439,36 @@ body {
 }
 
 .section-products {
-    padding: 72px 0 54px;
+    /* padding: 72px 0 54px; */
+    /* margin-top: 3.375rem; */
 }
 
 .section-products .about h5 {
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 600;
     color: var(--emglow-black);
 }
 
 .section-products .header {
-    margin-bottom: 50px;
+    margin-bottom: 36px;
+    font-size: 36px;
+    line-height: 3rem;
+    font-weight: 800;
+    color: var(--emglow-black);
 }
 
 .section-products .header h3 {
     font-size: 1rem;
     color: var(--emglow-primary);
     font-weight: 800;
-    font-family: var(--inter);
+    font-family: var(--manrope);
 }
 
 .section-products .header h2 {
     font-size: 2.2rem;
     font-weight: 700;
     color: #fff;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
 }
 
 .section-products .single-product {
@@ -497,7 +499,6 @@ body {
 .section-products .single-product:hover .part-1::before {
     transform: scale(1.2, 1.2) rotate(5deg);
 }
-
 
 .section-products .single-product .part-1 .discount,
 .section-products .single-product .part-1 .new {
@@ -557,7 +558,7 @@ body {
 
 .section-products .single-product .part-2 .product-title {
     font-size: 1rem;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     line-height: 24px;
 }
 
@@ -565,7 +566,7 @@ body {
     display: inline-block;
     font-size: 1rem;
     color: var(--emglow-primary);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 500;
 }
 
@@ -588,10 +589,32 @@ body {
 }
 
 .section-products .product-price {
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-size: 20px !important;
     font-weight: 600 !important;
     color: var(--emglow-accent) !important;
+}
+
+.skincare {
+    margin-top: 150px;
+}
+
+.skincare-product .img-skincare-thumbnail {
+    width: 100%;
+    height: 200px;
+}
+
+.skincare-product .card-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--emglow-black);
+    line-height: 30px;
+    margin-top: 24px;
+}
+
+.skincare-product .img-skincare-thumbnail img {
+    object-fit: contain;
+    height: 100%;
 }
 
 .featured-treatment {
@@ -609,14 +632,14 @@ body {
     color: var(--emglow-primary);
     font-size: 18px;
     line-height: 30px;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     text-transform: uppercase;
 }
 
 .featured-treatment h1 {
     font-size: 48px;
     color: var(--emglow-black);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     line-height: 60px;
     font-weight: 600;
 }
@@ -625,7 +648,7 @@ body {
     color: var(--emglow-black);
     font-size: 16px;
     line-height: 28px;
-    font-family: var(--inter);
+    font-family: var(--manrope);
     font-weight: 400;
 }
 
@@ -633,7 +656,7 @@ body {
     font-size: 20px;
     line-height: 28px;
     font-weight: 500;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     color: #222;
 }
 
@@ -647,15 +670,15 @@ body {
     font-weight: 600;
     line-height: 52px;
     color: var(--emglow-black);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
 }
 
 .commitment .desc {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    color: #6D6D6D;
-    font-family: var(--inter);
+    color: #6d6d6d;
+    font-family: var(--manrope);
 }
 
 .commitment .commitment-box .testi {
@@ -665,22 +688,19 @@ body {
     line-height: 24px;
     /* or 164% */
 
-    font-family: var(--inter);
-    color: #6D6D6D;
-
+    font-family: var(--manrope);
+    color: #6d6d6d;
 }
 
 .commitment .commitment-box h4 {
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-style: normal;
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
     /* identical to box height */
 
-
-    color: #1C1C1D;
-
+    color: #1c1c1d;
 }
 
 .commitment .commitment-box .title {
@@ -688,19 +708,18 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 19px;
-    color: #9C988F;
-
+    color: #9c988f;
 }
 
 .booking {
     max-height: 100%;
-    background-color: #F4ECE9;
+    background-color: #f4ece9;
     padding-top: 2rem;
     margin-bottom: 120px;
 }
 
 .booking .copy-customer {
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -710,7 +729,6 @@ body {
     letter-spacing: 0.01em;
 
     color: #414449;
-
 }
 
 .booking .divider {
@@ -725,7 +743,7 @@ body {
     font-size: 54px;
     line-height: 64px;
     /* or 117% */
-    font-family: var(--poppins);
+    font-family: var(--manrope);
 
     letter-spacing: -0.02em;
     text-transform: capitalize;
@@ -734,12 +752,12 @@ body {
 }
 
 .booking .btn-accent-emglow {
-    background-color: #E15C19;
+    background-color: #e15c19;
     font-size: 16px;
     line-height: 24px;
     color: white;
     border-radius: 24px;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 600;
 }
 
@@ -755,7 +773,7 @@ body {
     font-size: 36px;
     color: var(--emglow-black);
     font-weight: 700;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     line-height: 48px;
 }
 
@@ -780,11 +798,11 @@ a:focus {
 }
 
 footer {
-    background: var(--emglow-primary);
+    background: #eee;
 }
 
 .emglow-footer h5 {
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     color: var(--emglow-black);
 }
 
@@ -846,7 +864,7 @@ footer ul li {
 
     .content-features .numbers {
         font-size: 20px !important;
-        line-height: 24px;
+        line-height: 32px;
     }
 
     .btn-emglow-dark {
@@ -863,7 +881,7 @@ footer ul li {
         font-size: 36px;
         line-height: 48px;
         color: var(--emglow-black);
-        font-family: var(--bai) !important;
+        font-family: var(--manrope) !important;
         font-weight: 700 !important;
     }
 
@@ -967,7 +985,7 @@ footer ul li {
 }
 
 .testimonials .subtitle {
-    font-family: var(--inter);
+    font-family: var(--manrope);
     font-size: 16px;
     font-weight: 800;
     line-height: 28px;
@@ -978,7 +996,7 @@ footer ul li {
 .testimonials .title {
     font-size: 48px;
     font-weight: 600;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     line-height: 60px;
     color: #fff;
 }
@@ -988,12 +1006,12 @@ footer ul li {
     padding: 24px;
     border-radius: 16px;
     text-align: center;
-    border: 1px solid #ECECEC;
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10), 0 15px 12px rgba(0, 0, 0, 0.02);
+    border: 1px solid #ececec;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
 }
 
 #customers-testimonials .shadow-effect p {
-    font-family: var(--inter);
+    font-family: var(--manrope);
     font-size: 13px;
     line-height: 28px;
     margin: 0 0 17px 0;
@@ -1004,7 +1022,7 @@ footer ul li {
 .testimonial-name {
     margin: -17px auto 0;
     display: table;
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 600;
     width: auto;
     background: var(--emglow-gradient);
@@ -1027,7 +1045,7 @@ footer ul li {
     text-align: center;
     padding: 16px;
     margin-bottom: 80px;
-    opacity: .2;
+    opacity: 0.2;
     -webkit-transform: scale3d(0.8, 0.8, 1);
     transform: scale3d(0.8, 0.8, 1);
     -webkit-transition: all 0.3s ease-in-out;
@@ -1037,8 +1055,8 @@ footer ul li {
 
 #customers-testimonials .owl-item.active.center .item {
     opacity: 1;
-    -webkit-transform: scale3d(1.0, 1.0, 1);
-    transform: scale3d(1.0, 1.0, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
 }
 
 .owl-carousel .owl-item img {
@@ -1074,10 +1092,10 @@ footer ul li {
     width: 20px;
 }
 
-/* 
+/*
 ---------------------------------------------
 Promos Style
---------------------------------------------- 
+---------------------------------------------
 */
 
 .promos {
@@ -1092,7 +1110,7 @@ Promos Style
 
 .promos .content-container div.title-promos {
     font-size: 48px;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     color: var(--emglow-primary);
     line-height: 60px;
     font-weight: 700;
@@ -1107,9 +1125,8 @@ Promos Style
 
 .promos .subtitle-promos {
     color: #fff;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: 1%;
+    font-size: 20px;
+    line-height: 32px;
     margin-bottom: 16px;
 }
 
@@ -1136,7 +1153,7 @@ Promos Style
 .promos .text {
     font-size: 18px;
     color: var(--emglow-black);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     line-height: 32px;
     font-weight: 600;
 }
@@ -1156,7 +1173,7 @@ Promos Style
 }
 
 .about .header-section {
-    background: url('/../assets/bg-about.jpeg');
+    background: url("/../assets/bg-about.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1164,7 +1181,7 @@ Promos Style
 
 .header-section .title {
     font-size: 48px;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-weight: 700;
 }
 
@@ -1173,20 +1190,20 @@ Promos Style
     line-height: 52px;
     font-weight: 700;
     color: var(--emglow-black);
-    font-family: var(--bai);
+    font-family: var(--manrope);
 }
 
 /* CABANG */
 
 .content-cabang h1 {
     font-size: 36px;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     color: var(--emglow-black);
     font-weight: 600;
 }
 
 .cabang-klinik .header-section {
-    background: url('/../assets/bg-cabang.jpeg');
+    background: url("/../assets/bg-cabang.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1195,16 +1212,55 @@ Promos Style
 /* TREATMENT */
 
 .emglow-treatment .header-section {
-    background: url('/../assets/bg-treatment.jpeg');
+    background: url("/../assets/bg-treatment.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.img-treatment-thumbnail {
+    height: 240px;
+}
+
+.banner {
+    margin-top: 6.25rem;
+}
+
+.banner .card-title {
+    font-weight: 800;
+    color: var(--emglow-black);
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.banner .card-text {
+    font-size: 14px;
+    /* max-height: 32px; */
+    color: #444444;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.banner .link {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: var(--emglow-primary);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.img-treatment-thumbnail img {
+    object-fit: cover;
+    height: 100%;
+}
+
 .box {
     padding: 40px 30px;
-    transition: all .4s ease-in-out;
-    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    cursor: pomanrope;
     border-radius: 24px;
     border: 1px solid #ddd;
 }
@@ -1224,8 +1280,6 @@ a:hover {
     height: auto;
     /* padding: 20px; */
 }
-
-
 
 p.text-muted {
     margin: 0;
@@ -1277,7 +1331,7 @@ b {
     padding: 1rem 0;
     text-align: center;
     color: white;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-size: 24px;
     background-color: var(--emglow-accent) !important;
     border-radius: 24px;
@@ -1286,7 +1340,7 @@ b {
 .content-treatment h5 {
     font-size: 24px;
     color: var(--emglow-black);
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-weight: 700;
 }
 
@@ -1307,7 +1361,7 @@ b {
 }
 
 .store .header-section {
-    background: url('/../assets/bg-store.jpeg');
+    background: url("/../assets/bg-store.jpeg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1324,14 +1378,14 @@ b {
 .store .content-store .title {
     font-size: 24px;
     color: var(--emglow-accent);
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-weight: 700;
     margin: 12px 0;
 }
 
 .store .content-store .subtitle {
     font-size: 13px;
-    color: #767E7E;
+    color: #767e7e;
     font-weight: 400;
     margin-bottom: 14px;
 }
@@ -1346,9 +1400,16 @@ b {
 }
 
 .t-products {
-    background-image: linear-gradient(to right top, #5629c0, #5625cb, #5620d5, #551ae0, #5412eb);
+    background-image: linear-gradient(
+        to right top,
+        #5629c0,
+        #5625cb,
+        #5620d5,
+        #551ae0,
+        #5412eb
+    );
     color: #fff;
-    border-radius: 3px
+    border-radius: 3px;
 }
 
 .processor {
@@ -1361,11 +1422,11 @@ b {
 
 .brand {
     background-color: #fff;
-    border-bottom: 1px solid #eee
+    border-bottom: 1px solid #eee;
 }
 
 .store .product .about h5 {
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-size: 18px;
     color: var(--emglow-black);
     font-weight: 700;
@@ -1419,11 +1480,11 @@ button:active {
     display: inline-block;
     width: 36px;
     height: 39px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     border-radius: 11%;
     text-align: center;
-    cursor: pointer;
+    cursor: pomanrope;
     margin-left: 3px;
     -webkit-transition: all 200ms ease;
     -moz-transition: all 200ms ease;
@@ -1473,7 +1534,7 @@ button:active {
 }
 
 .dokter .header-section {
-    background: url('/../assets/bg-dokter.jpeg');
+    background: url("/../assets/bg-dokter.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1491,7 +1552,7 @@ button:active {
     margin-bottom: 0;
     letter-spacing: 2px;
     font-weight: normal;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     color: var(--emglow-black);
     font-weight: 700;
 }
@@ -1510,7 +1571,7 @@ button:active {
 .cabang-klinik .details h1 {
     font-size: 36px;
     font-weight: 700;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     color: var(--emglow-black);
 }
 
@@ -1558,7 +1619,7 @@ button:active {
 .team-title h5 {
     display: block;
     color: var(--emglow-primary);
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -1621,9 +1682,7 @@ text-color {
 .quantity input {
     border-radius: 0;
     height: 40px;
-
 }
-
 
 .custom-btn {
     text-transform: capitalize;
@@ -1644,7 +1703,7 @@ text-color {
     height: 320px;
     object-fit: cover;
     border-radius: 36px;
-    cursor: pointer;
+    cursor: pomanrope;
 }
 
 .similar-product {
@@ -1667,7 +1726,7 @@ text-color {
 .similar-product .title {
     margin-top: 16px;
     margin-bottom: 12px;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-size: 24px;
     color: var(--emglow-black);
     line-height: 36px;
@@ -1693,7 +1752,7 @@ text-color {
     border-radius: 24px;
     padding: 8px 24px;
     color: var(--emglow-accent);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 600;
     font-size: 16px;
     transition: all 200ms ease-in-out;
@@ -1704,10 +1763,8 @@ text-color {
     color: white;
 }
 
-
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-
     /* Make preview images responsive  */
     .previews img {
         width: 100%;
@@ -1721,7 +1778,6 @@ text-color {
     .product img {
         height: auto;
     }
-
 }
 
 /* Reseller */
@@ -1731,7 +1787,7 @@ text-color {
 }
 
 .reseller .header-section {
-    background-image: url('/../assets/bg-reseller.jpeg');
+    background-image: url("/../assets/bg-reseller.jpeg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1739,7 +1795,7 @@ text-color {
 
 .reseller .title {
     font-size: 36px;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-weight: 700;
     color: var(--emglow-black);
     line-height: 48px;
@@ -1758,7 +1814,7 @@ text-color {
 
 .reseller .desc-box .h3 {
     color: var(--emglow-primary);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 600;
 }
 
@@ -1776,7 +1832,7 @@ text-color {
 }
 
 .karir .header-section {
-    background-image: url('/../img/header-karir.png');
+    background-image: url("/../img/header-karir.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1788,21 +1844,21 @@ text-color {
 
 .karir .title {
     font-size: 36px;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-weight: 700;
     color: var(--emglow-black);
     line-height: 48px;
 }
 
 .karir .desc-box .h3 {
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     color: var(--emglow-black);
     font-weight: 600;
 }
 
 .karir .desc-box .desc {
     font-size: 14px;
-    color: #767E7E;
+    color: #767e7e;
     line-height: 26px;
     font-weight: 400;
 }
@@ -1811,7 +1867,7 @@ text-color {
 .btn-outline-primary-emglow {
     border-color: var(--emglow-primary);
     color: var(--emglow-primary);
-    font-family: var(--poppins);
+    font-family: var(--manrope);
     font-weight: 600;
 }
 
@@ -1822,7 +1878,7 @@ text-color {
 }
 
 .job-vacancy .card .card-title {
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-size: 24px;
     font-weight: 600;
     color: var(--emglow-black);
@@ -1831,7 +1887,7 @@ text-color {
 .reseller .card .card-title {
     font-size: 24px;
     line-height: 32px;
-    font-family: var(--bai);
+    font-family: var(--manrope);
     font-weight: 600;
     color: var(--emglow-black);
 }

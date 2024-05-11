@@ -10,10 +10,13 @@
         <div class="cover-thumbnail">
             <div class="container">
                 <div class="content-hero">
-                    <div class="row justify-content-center align-items-center">
-                        <div class="col-12 col-md-6 title-hero text-center" data-aos="fade-up">
-                            <img src="assets/logo-old.png" alt="Logo" class="w-75">
-                            <a href="#" class="btn btn-emglow-dark mt-2">Temukan perawatan untukmu <img
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 title-hero" data-aos="fade-up">
+                            <img src="assets/logo-old.png" alt="Logo" class="w-50">
+                            <h1 class="mb-4">
+                                Solusi Perawatan Kulit Wajah Cerah & Bersinar
+                            </h1>
+                            <a href="{{ route('treatment') }}" class="btn btn-emglow-dark">Temukan perawatan untukmu <img
                                     src="/assets/arrow-right.svg" alt="Arrow"></a>
                         </div>
                         <div class="col-12 col-md-6 img-hero">
@@ -26,11 +29,11 @@
     </section>
     <!-- End Hero -->
 
-    <section class="promos">
+    {{-- <section class="promos">
         <div class="container">
             <div class="content-container">
                 <div class="row">
-                    <div class="col-12 col-md-5" data-aos="fade-left" data-aos-delay="100">
+                    <div class="col-12 col-md-5">
                         <div class="title-promos">
                             Hot Offer <img src="/img/fire-2.png" alt="Hot">
                         </div>
@@ -40,165 +43,36 @@
                     </div>
                 </div>
                 <div class="content">
-                    <div class="row">
-                        @foreach ($promo as $item)
-                            <div class="col-12 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-                                <div class="banner-thumbnail">
-                                    <div class="banner-img"
-                                        style="background-image: url('{{ asset('photo/' . $item->photo) }}')"
-                                        class="w-100">
-                                    </div>
-                                </div>
-                                <div class="text mt-4">
-                                    {{ $item->name }}
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- Products -->
-    <section class="products-emglow">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-                    <div class="title" data-aos="fade-up">
-                        <h1>Solusi Perawatan Kulit Wajah Cerah & Bersinar</h1>
-                        <p>Cerahkan wajahmu dan sinari aktivitasmu dengan menemukan solusi perawatan kulit wajah yang tepat
-                            untukmu.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Treatment -->
-            <div class="section-products">
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-8 col-lg-6">
-                        <div class="header" data-aos="fade-up">
-                            <h3>Featured Treatment</h3>
-                            <h2>Best Treatment For Your #HealthyGlowSkin</h2>
+                    <div class="card bg-dark text-white">
+                        <img src="https://placehold.co/600x400@2x.png" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="treatment-list">
-                <div class="treatment">
-                    <div class="container pb-4 mb-5">
-                        <div class="d-flex justify-content-center row">
-                            @foreach ($treatment as $item)
-                                <div class="col-md-10 treatment-card rounded-3 mb-4" data-aos="fade-up-right"
-                                    data-aos-delay="100">
-                                    <div class="row bg-white justify-content-center align-items-center py-3 px-1">
-                                        <div class="col-md-3 rounded-2">
-                                            <img class="img-fluid img-responsive rounded product-image"
-                                                src="{{ asset('photo/' . $item->photo) }}" alt="Treatment">
-                                        </div>
-                                        <div class="col-md-6 mt-2">
-                                            <h5>{{ $item->name }}</h5>
-                                            <p class="text-justify para mb-0">
-                                                {{ $item->deskripsi }}
-                                            </p>
-                                        </div>
-                                        <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                                            <div class="d-flex flex-row align-items-center">
-                                                <h4 class="animate-charcter">
-                                                    @if ($item->label == 2)
-                                                        Best Treatment
-                                                    @else
-                                                        New Treatment
-                                                    @endif
-                                                </h4>
-                                            </div>
-                                            {{-- <h6 class="text-success">#HealthyGlowSkin</h6> --}}
-                                            <div class="d-flex flex-column mt-4"><button
-                                                    class="btn btn-primary-emglow btn-sm" type="button">Lihat
-                                                    Detail</button></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                        <div class="d-flex justify-content-center row">
-                            <div class="col-12">
-                                <div class="row justify-content-center">
-                                    <div class="col-6 col-md-3">
-                                        <a class="nav-link {{ request()->is('treatment') ? 'active' : '' }}"
-                                            href="{{ route('treatment') }}">
-                                            <button
-                                                class="btn btn-outline-primary btn-sm w-100 rounded-pill lainnya-sm">Treatment
-                                                Lainnya</button>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Treatment -->
-
-            <!-- Skincare -->
-            <section class="section-products">
-                <div class="container">
-                    <div class="row justify-content-center text-center">
-                        <div class="col-md-8 col-lg-6">
-                            <div class="header" data-aos="fade-up">
-                                <h3>Featured Product</h3>
-                                <h2>Best Skincare For Your Skin</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row g-2">
-                        @forelse ($produk as $item)
-                            <div class="col-md-4">
-                                <a href="#">
-                                    <div class="product p-4">
-                                        <div class="text-center">
-                                            <img src="{{ asset('photo/' . $item->photo) }}" width="160">
-                                        </div>
-                                        <div class="about text-center mb-4">
-                                            <h5>{{ $item->name }}</h5>
-                                        </div>
-                                        <a href="{{ $item->link }}">
-                                            <button class="btn btn-outline-primary btn-outline-primary-emglow w-100">Lihat
-                                                Detail</button>
-                                        </a>
-                                    </div>
-                                </a>
-                            </div>
-                        @empty
-                            <div class="col-12">
-                                Empty
-                            </div>
-                        @endforelse
-                    </div>
-                </div>
-
-                <div class="d-flex justify-content-center row mt-2">
-                    <div class="col-6 col-md-3">
-                        <a class="nav-link {{ request()->is('store') ? 'active' : '' }}" href="{{ route('store') }}">
-                            <button class="btn btn-primary-emglow btn-sm w-100 rounded-pill">Lihat Produk
-                                Lainnya</button>
-                        </a>
-                    </div>
-                </div>
-        </div>
-    </section>
-    </section>
-    <!-- End Products -->
+    </section> --}}
 
     <!-- Features -->
     <section class="features-emglow">
         <div class="features-container">
             <div class="container">
                 <div class="content-features text-center">
-                    <h1 data-aos="fade-up">Telah membantu banyak wanita di Indonesia memiliki wajah yang cantik dan
-                        sehat.</h1>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-12">
+                            <div class="title-section" data-aos="fade-up">Telah membantu banyak wanita di Indonesia memiliki
+                                wajah yang cantik dan
+                                sehat.
+                            </div>
+                        </div>
+                    </div>
                     <div class="row statistics">
                         <div class="col-6 col-md-3 mb-4" data-aos="fade-up-right" data-aos-delay="100">
+                            <div class="img-showoff-thumb">
+                                <img src="img/happy-customer.png" alt="" class="w-50">
+                            </div>
                             <div class="numbers">
                                 2260++
                             </div>
@@ -207,6 +81,9 @@
                             </div>
                         </div>
                         <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="img-showoff-thumb">
+                                <img src="img/treatment.png" alt="" class="w-50">
+                            </div>
                             <div class="numbers">
                                 120+
                             </div>
@@ -215,6 +92,9 @@
                             </div>
                         </div>
                         <div class="col-6 col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                            <div class="img-showoff-thumb">
+                                <img src="img/natural-product.png" alt="" class="w-50">
+                            </div>
                             <div class="numbers">
                                 50++
                             </div>
@@ -223,6 +103,9 @@
                             </div>
                         </div>
                         <div class="col-6 col-md-3 mb-4" data-aos="fade-up-left" data-aos-delay="400">
+                            <div class="img-showoff-thumb">
+                                <img src="img/effective.png" alt="" class="w-50">
+                            </div>
                             <div class="numbers">
                                 99%
                             </div>
@@ -236,6 +119,108 @@
         </div>
     </section>
     <!-- End Features -->
+
+    <!-- Products -->
+    <section class="products-emglow">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-8">
+                    <div class="title" data-aos="fade-up">
+                        <h1>Solusi Perawatan Kulit Wajah Cerah & Bersinar</h1>
+                        <p>Cerahkan wajahmu dan sinari aktivitasmu dengan menemukan solusi perawatan kulit wajah yang tepat
+                            untukmu.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="accent-img" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+                        <img src="img/accent.png" alt="Accent Icon" class="w-75">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Treatment -->
+            <div class="banner">
+                <div class="section-products">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="header" data-aos="fade-up">
+                                Treatment Pilihan eMGlow Aesthetic Centre
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" data-aos="fade-up">
+                    @foreach ($treatment as $item)
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="card h-100">
+                                <div class="img-treatment-thumbnail">
+                                    <img src="{{ asset('photo/' . $item->photo) }}" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $item->name }}</h5>
+                                    <p class="card-text">{{ $item->deskripsi }}</p>
+                                    <a href="{{ route('treatment-detail', $item->uuid)}}" class="link">Lihat detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+            <div class="d-flex justify-content-center row mt-5">
+                <div class="col-6 col-md-4">
+                    <a href="{{ route('treatment') }}">
+                        <button class="btn btn-primary-emglow btn-sm w-100">Lihat Treatment Lainnya
+                            Lainnya</button>
+                    </a>
+                </div>
+            </div>
+            <!-- End Treatment -->
+
+            <!-- Skincare -->
+            <div class="skincare">
+                <div class="section-products">
+                    <div class="row">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="header" data-aos="fade-up">
+                                Produk Skincare Terbaik dari eMGlow Aesthetic Centre
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skincare-product row row-cols-1 row-cols-md-3 g-4 justify-content-center" data-aos="fade-up">
+                    @forelse ($produk as $item)
+                        <div class="col-md-3 col-lg-3 col-6">
+                            <a href="{{ $item->link }}">
+                                <div class="card h-100">
+                                    <div class="img-skincare-thumbnail">
+                                        <img src="{{ asset('photo/' . $item->photo) }}" class="card-img-top"
+                                            alt="Products">
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-title text-dark">{{ $item->name }}</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    @empty
+                        <div class="col-12">
+                            Empty
+                        </div>
+                    @endforelse
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-center row mt-5">
+                <div class="col-6 col-md-4">
+                    <a class="nav-link {{ request()->is('store') ? 'active' : '' }}" href="{{ route('store') }}">
+                        <button class="btn btn-primary-emglow btn-sm w-100">Lihat Produk
+                            Lainnya</button>
+                    </a>
+                </div>
+            </div>
+    </section>
+    <!-- End Products -->
 
     <!-- Featured Treatment -->
     <section class="featured-treatment">
@@ -325,68 +310,6 @@
         </div>
     </section>
     {{-- Youtube End --}}
-
-    {{-- Education --}}
-    <!-- Book -->
-    {{-- <section class="booking" data-aos="fade-up">
-        <div class="container">
-            <div class="content">
-                <div class="row d-flex justify-content-center">
-                    @forelse ($edukasi as $item)
-                        <div class="col-12 col-md-6 mt-3" data-aos="fade-up-right" data-aos-duration="1000">
-                            <div class="cta mt-4 mb-3">Tahukah Kamu?</div>
-                            <p class="education mb-4">
-                                {{ $item->deskripsi }}
-                            </p>
-                            <button class="btn btn-accent-emglow">Lihat selengkapnya</button>
-                        </div>
-                        <div class="col-12 col-md-4" data-aos="fade-up-left" data-aos-duration="1200">
-                            <img src="{{ asset('photo/' . $item->photo) }}" alt="Foto Treatment" class="w-100">
-                        </div>
-                    @empty
-                        <div class="col-12 col-md-12">
-                            EMPTY
-                        </div>
-                    @endforelse
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- End -->
-    {{-- Education End --}}
-
-    <!-- Komitmen -->
-    {{-- <section class="commitment">
-        <div class="container">
-            <div class="row align-items-center d-flex" data-aos="fade-up">
-                <div class="col-2 col-md-2">
-                    <img src="assets/testi-icon.svg" alt="Testi" class="w-100">
-                </div>
-                <div class="col-8 col-md-6 ms-2">
-                    <div class="title">
-                        Komitmen eMGlow untuk kamu
-                    </div>
-                    <div class="desc">
-                        Komitmen yang kami berikan untuk kamu yang perawatan dan menggunakan produk dari eMGlow
-                        Aesthetic Centre.
-                    </div>
-                </div>
-            </div>
-            <div class="row d-flex align-items-center commitment-box justify-content-center mt-5" data-aos="fade-up">
-                <div class="col-12 col-md-6">
-                    <img src="assets/circle-logo.png" alt="Logo" class="mb-4">
-                    <p class="testi mb-3">"Treatment di eMGlow sangat nyaman dan menyenangkan. Awalnya diinformasikan
-                        treatment apa yang cocok untuk aku yang aktif berolahraga ini. Top!"</p>
-                    <h4 class="mb-2">Dr. Marlina</h4>
-                    <p class="title">CEO eMGlow Aesthetic Centre</p>
-                </div>
-                <div class="col-12 col-md-4">
-                    <img src="assets/dokmar-testi.png" alt="Dokmar Testi" class="w-100">
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- End -->
 
     {{-- Testimonial --}}
     <!-- TESTIMONIALS -->

@@ -7,7 +7,7 @@
 @section('content')
     <section class="cabang-klinik">
         <div class="header-section">
-            <div class="title color-white">Cabang Klinik</div>
+            <h1 class="text-white fw-bold">Cabang Klinik</h1>
         </div>
         <div class="container mt-5">
             <div class="content-cabang">
