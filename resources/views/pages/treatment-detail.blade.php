@@ -40,7 +40,6 @@
                                         {{ $item->deskripsi }}
                                     </p>
                                 </div>
-
                                 <div class="row questions bg-dark p-3">
                                     <div class="col-md-1 icon">
                                         <i class="fa-brands fa-rocketchat questions-icon"></i>

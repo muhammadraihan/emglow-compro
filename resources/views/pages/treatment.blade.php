@@ -5,50 +5,30 @@
 @endsection
 
 @section('content')
-    <section class="emglow-treatment">
-        <div class="header-section">
-            <div class="title color-white">Treatment</div>
+    <section class="products-emglow emglow-treatment mt-0 pt-0">
+        <div class="header-section mt-0">
+            <h1 class="fw-bold text-white">Pilihan Treatment Kecantikan eMGlow Aesthetics Centre</h1>
         </div>
-        <div class="container mt-5">
-            <div class="container similar-products my-4">
-                <div class="row">
+        <div class="container">
+            <div class="banner">
+                <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center" data-aos="fade-up">
                     @foreach ($treatment as $item)
-                        <div class="col-12 col-md-4 col-lg-6">
-                            <div class="similar-product">
-                                <img class="w-100" src="{{ asset('photo/' . $item->photo) }}" alt="Preview">
-                                <p class="title color-gold">{{ $item->name }}</p>
-                                <div class="text-muted mb-4 color-white">{!! $item->deskripsi !!}</div>
-                                <a href="{{ route('treatment-detail', $item->uuid)}}" class="btn btn-primary-emglow">Lihat Detail</a>
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="card h-100">
+                                <div class="img-treatment-thumbnail">
+                                    <img src="{{ asset('photo/' . $item->photo) }}" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $item->name }}</h5>
+                                    <p class="card-text">{{ $item->deskripsi }}</p>
+                                    <a href="{{ route('treatment-detail', $item->slug) }}" class="link">Lihat
+                                        detail</a>
+                                </div>
                             </div>
                         </div>
                     @endforeach
                 </div>
             </div>
         </div>
-        </div>
     </section>
-    {{-- <div class="content-treatment">
-                <div class="d-flex justify-content-center row">
-                    <div class="col-md-10 treatment-card rounded-3 mb-4" data-aos="fade-up-right" data-aos-delay="100">
-                        <div class="row bg-white justify-content-center align-items-center py-3 px-1 border rounded">
-                            <div class="col-md-7 rounded-2">
-                                <img class="img-fluid img-responsive rounded product-image"
-                                    src="/assets/Crystal Skin IPL Infusion.png" alt="Treatment">
-                            </div>
-                            <div class="col-md-5 mt-2">
-                                <h5>Crystal Skin IPL Infusion</h5>
-                                <p class="text-justify para mb-0">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio reiciendis,
-                                    accusamus eveniet suscipit, illo totam repudiandae voluptatem vero, facilis modi quam
-                                    quo. Eaque, inventore, consectetur necessitatibus nobis eum quae laboriosam pariatur
-                                    amet exercitationem animi quidem ducimus molestiae
-                                </p>
-                                <div class="d-flex flex-column mt-4"><button class="btn btn-primary-emglow btn-sm"
-                                        type="button">Book
-                                        Now</button></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
 @endsection

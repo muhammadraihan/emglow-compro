@@ -10,9 +10,9 @@
             <div class="padding-karir"></div>
         </div>
         <div class="container">
-            <div class="my-5 text-center title color-white">
+            <h1 class="my-5 text-center fw-bold text-white">
                 Job Vacancy di eMGlow Aesthetic Centre
-            </div>
+            </h1>
             <div class="row job-vacancy">
                 @foreach ($karir as $item)
                     <div class="col-6 col-md-6 col-lg-3">
@@ -24,7 +24,7 @@
                                 </div>
                             </div>
 
-                            
+
                             <div class="color-black p-2">{!! $item->deskripsi !!}</div>
                             <div class="card-body text-center">
                                 <a href="{{ 'https://' . $item->link }}" class="btn btn-primary-emglow w-100">Apply

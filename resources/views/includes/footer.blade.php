@@ -18,11 +18,11 @@
             <div class="col-lg-2 col-md-6">
                 <h5 class="mb-3">Menu</h5>
                 <ul class="list-unstyled text-muted">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Treatment</a></li>
-                    <li><a href="#">Skincare</a></li>
-                    <li><a href="#">Kontak</a></li>
-                    <li><a href="#">Karir</a></li>
+                    {{-- <li><a href="{{ route('/') }}">Home</a></li> --}}
+                    <li><a href="{{ route('treatment') }}">Treatment</a></li>
+                    <li><a href="{{ route('produkAll') }}">Skincare</a></li>
+                    <li><a href="{{ route('about') }}">Kontak</a></li>
+                    <li><a href="{{ route('karir') }}">Karir</a></li>
                 </ul>
             </div>
             <div class="col-lg-4 col-md-6">
@@ -52,8 +52,8 @@
         <div class="row mt-3">
             <div class="col-12 col-md-6 color-black">
                 <a href="/" class="sosmed-icon">Instagram</a>
-                <a href="/" class="sosmed-icon">Instagram</a>
-                <a href="/" class="sosmed-icon">Instagram</a>
+                <a href="/" class="sosmed-icon">TikTok</a>
+                <a href="/" class="sosmed-icon">Youtube</a>
             </div>
         </div>
         <div class="divider">
