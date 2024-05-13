@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Produk;
 use App\Models\Produk_kategori;
 use Carbon\Carbon;
+use Illuminate\Support\Str;
 
 use Auth;
 use DataTables;
@@ -99,6 +100,7 @@ class ProdukController extends Controller
         // dd($request->photo);
 
         $produk = new Produk();
+        $produk->slug = Str::slug($request->name);
         $produk->name = $request->name;
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori = $request->kategori;
@@ -168,6 +170,7 @@ class ProdukController extends Controller
         // dd($request->photo);
 
         $produk = Produk::uuid($id);
+        $produk->slug = Str::slug($request->name);
         $produk->name = $request->name;
         $produk->deskripsi = $request->deskripsi;
         $produk->kategori = $request->kategori;

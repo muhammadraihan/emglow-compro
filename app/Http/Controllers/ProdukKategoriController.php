@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Produk_kategori;
 use Carbon\Carbon;
+use Illuminate\Support\Str;
 
 use Auth;
 use DataTables;
@@ -77,6 +78,7 @@ class ProdukKategoriController extends Controller
         // dd($request->photo);
 
         $produk_kategori = new Produk_kategori();
+        $produk_kategori->slug = Str::slug($request->name);
         $produk_kategori->name = $request->name;
         $produk_kategori->save();
 
@@ -131,6 +133,7 @@ class ProdukKategoriController extends Controller
         // dd($request->photo);
 
         $produk_kategori = Produk_kategori::uuid($id);
+        $produk_kategori->slug = Str::slug($request->name);
         $produk_kategori->name = $request->name;
         $produk_kategori->save();
 
