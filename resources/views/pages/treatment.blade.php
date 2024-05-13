@@ -21,7 +21,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">{{ $item->name }}</h5>
                                     <p class="card-text">{{ $item->deskripsi }}</p>
-                                    <a href="{{ route('treatment-detail', $item->uuid) }}" class="link">Lihat
+                                    <a href="{{ route('treatment-detail', $item->slug) }}" class="link">Lihat
                                         detail</a>
                                 </div>
                             </div>

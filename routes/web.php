@@ -11,8 +11,11 @@
 |
 */
 
+use App\Models\Treatment;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\URL;
 
 Route::get('/', function () {
     return view('pages.landing');
@@ -20,9 +23,9 @@ Route::get('/', function () {
 
 Route::get('/about', 'FrontEndController@about')->name('about');
 Route::get('/treatment', 'FrontEndController@treatment')->name('treatment');
-Route::get('/treatment-detail/{uuid}', 'FrontEndController@treatmentDetail')->name('treatment-detail');
+Route::get('/treatment-detail/{slug}', 'FrontEndController@treatmentDetail')->name('treatment-detail');
 Route::get('/store', 'FrontEndController@store')->name('store');
-Route::get('/produk/{uuid}', 'FrontEndController@produk')->name('produk');
+Route::get('/produk/{slug}', 'FrontEndController@produk')->name('produk');
 Route::get('/produkAll', 'FrontEndController@produkAll')->name('produkAll');
 Route::get('/dokter', 'FrontEndController@dokter')->name('dokter');
 Route::get('/cabang-klinik', 'FrontEndController@cabang')->name('cabang-klinik');
@@ -63,4 +66,21 @@ Route::group(['prefix' => 'backoffice', 'middleware' => ['auth']], function () {
     Route::resource('edukasi', 'EdukasiController');
     Route::resource('penghargaan', 'PenghargaanController');
     Route::resource('socialMedia', 'SocialMediaController');
+
+    Route::get('generate-sitemap', function(){
+        $sitemap = App::make("sitemap");
+
+        $sitemap->add(URL::to('/'), '2012-08-25T20:10:00+02:00', '1.0', 'daily');
+        // $sitemap->add(URL::to('page'), '2012-08-26T12:30:00+02:00', '0.9', 'monthly');
+
+        $treatments = Treatment::all();
+        
+        // foreach ($treatments as $treatment) {
+        //     $sitemap->add(URL::to('treatment/'. $treatment->uuid .'/edit'), $treatment->updated_at, '1.0', 'daily');
+        // }
+
+        $sitemap->store('xml', 'sitemap');
+
+        return redirect(url('sitemap.xml'));
+    });
 });

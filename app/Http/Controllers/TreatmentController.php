@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Treatment;
 use App\Models\Treatment_kategori;
 use Carbon\Carbon;
+use Illuminate\Support\Str;
 
 use Auth;
 use DataTables;
@@ -100,6 +101,7 @@ class TreatmentController extends Controller
         // dd($request->photo);
 
         $treatment = new Treatment();
+        $treatment->slug = Str::slug($request->name);
         $treatment->label = $request->label;
         $treatment->name = $request->name;
         $treatment->deskripsi = $request->deskripsi;
@@ -170,6 +172,7 @@ class TreatmentController extends Controller
         // dd($request->photo);
 
         $treatment = Treatment::uuid($id);
+        $treatment->slug = Str::slug($request->name);
         $treatment->label = $request->label;
         $treatment->name = $request->name;
         $treatment->deskripsi = $request->deskripsi;

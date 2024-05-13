@@ -25,7 +25,7 @@
                         <div class="dropdown-menu bg-light m-0">
                             <a href="{{ route('produkAll') }}" class="dropdown-item">Semua</a>
                             @foreach ($kategori as $item)
-                            <a href="{{ route('produk', $item->uuid)}}" class="dropdown-item">{{$item->name}}</a>
+                            <a href="{{ route('produk', $item->slug)}}" class="dropdown-item">{{$item->name}}</a>
                             @endforeach
                             {{-- <a href="download.html" class="dropdown-item">Paket Haji</a> --}}
                         </div>

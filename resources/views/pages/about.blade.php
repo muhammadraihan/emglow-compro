@@ -16,11 +16,11 @@
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-12 col-md-8 text-center mb-5">
                         <h1 class="color-gold">Visi</h1>
-                        <p>{!! $item->visi !!}</p>
+                        <p>{!! $about[0]->visi !!}</p>
                     </div>
                     <div class="col-12 col-md-8 mb-5 text-center">
                         <h1 class="color-gold">Misi</h1>
-                        <p>{!! $item->misi !!}</p>
+                        <p>{!! $about[0]->misi !!}</p>
                     </div>
                 </div>
                 <div class="row justify-content-center align-items-center">
@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-12 col-md-5 history">
                         <h1 class="color-gold">Sejarah</h1>
-                        {!! $item->sejarah !!}
+                        {!! $about[0]->sejarah !!}
                     </div>
                 </div>
             </div>

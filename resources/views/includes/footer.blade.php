@@ -18,9 +18,9 @@
             <div class="col-lg-2 col-md-6">
                 <h5 class="mb-3">Menu</h5>
                 <ul class="list-unstyled text-muted">
-                    <li><a href="{{ route('/') }}">Home</a></li>
+                    {{-- <li><a href="{{ route('/') }}">Home</a></li> --}}
                     <li><a href="{{ route('treatment') }}">Treatment</a></li>
-                    <li><a href="{{ route('product') }}">Skincare</a></li>
+                    <li><a href="{{ route('produkAll') }}">Skincare</a></li>
                     <li><a href="{{ route('about') }}">Kontak</a></li>
                     <li><a href="{{ route('karir') }}">Karir</a></li>
                 </ul>

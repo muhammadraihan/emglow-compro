@@ -75,11 +75,12 @@ class FrontEndController extends Controller
 
     public function produk($id)
     {
-        $produkKategori = Produk_kategori::uuid($id);
-        $produk = Produk::where('kategori', $produkKategori->uuid)->get();
+        // dd($id);
+        $produkKategori = Produk_kategori::where('slug',$id)->get();
+        $produk = Produk::where('kategori', $produkKategori[0]->uuid)->get();
         $kategori = Produk_kategori::all();
 
-        return view('pages.store', compact('produk', 'produkKategori','kategori'));
+        return view('pages.store', compact('produk','kategori'));
     }
 
     public function produkAll()
@@ -100,13 +101,26 @@ class FrontEndController extends Controller
 
     public function treatmentDetail($id)
     {
-        $treatmentDetail = Treatment::uuid($id);
-        $result = Treatment::all()->where('uuid', 'like', $treatmentDetail->uuid);
+        // $treatmentDetail = Treatment::uuid($id);
+        $result = Treatment::all()->where('slug', 'like', $id);
         $kategori = Produk_kategori::all();
         $about = About::all();
 
-        return view('pages.treatment-detail', compact('treatmentDetail', 'result', 'kategori', 'about'));
+        return view('pages.treatment-detail', compact('result', 'kategori', 'about'));
     }
+
+    public function treatmentDetailByName($name) {
+        $data = Treatment::where('name', $name)->first();
+    
+        // Periksa apakah data ditemukan
+        if (!$data) {
+            abort(404); // Atau tindakan lain jika data tidak ditemukan
+        }
+    
+        // Kembalikan view dengan data
+        return view('pages.treatment-detail', compact('data'));
+    }
+    
 
     public function reseller()
     {
